@@ -1,0 +1,58 @@
+/*
+Error: File to import not found or unreadable: ../../node_modules/bulma/bulma.sass.
+        on line 164 of assets/styles/prep.scss
+
+159: 
+160: 
+161: // @import "../../node_modules/bootstrap/scss/variables";
+162: 
+163: 
+164: @import "../../node_modules/bulma/bulma.sass";
+
+Backtrace:
+assets/styles/prep.scss:164
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/import_node.rb:44:in `import'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/usr/share/gems/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/usr/share/gems/gems/listen-3.1.5/lib/listen/event/config.rb:23:in `call'
+/usr/share/gems/gems/listen-3.1.5/lib/listen/event/processor.rb:115:in `_process_changes'
+/usr/share/gems/gems/listen-3.1.5/lib/listen/event/processor.rb:19:in `block in loop_for'
+/usr/share/gems/gems/listen-3.1.5/lib/listen/event/processor.rb:15:in `loop'
+/usr/share/gems/gems/listen-3.1.5/lib/listen/event/processor.rb:15:in `loop_for'
+/usr/share/gems/gems/listen-3.1.5/lib/listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/share/gems/gems/listen-3.1.5/lib/listen/event/loop.rb:42:in `block in setup'
+/usr/share/gems/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../../node_modules/bulma/bulma.sass.\A         on line 164 of assets/styles/prep.scss\A \A 159: \A 160: \A 161: // @import \"../../node_modules/bootstrap/scss/variables\";\A 162: \A 163: \A 164: @import \"../../node_modules/bulma/bulma.sass\";"; }
