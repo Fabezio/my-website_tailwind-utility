@@ -1,23 +1,27 @@
 <template lang="pug">
-  v-footer.flex(padless justify='center' color='blue' dark)
-    v-row(no-gutters flat)
+  footer.bg-teal-500.p-3.text-white.fixed.inset-x-0.bottom-0
+    nav.flex.items-center.justify-between.flex-wrap
+    .flex.items-center.flex-shrink-0.text-white.mr-6
 
-      v-spacer
-      //- div()
       nuxt-link.route(v-for='(link, i) in footerLinks', :key='i' :to='link.route')
         v-btn.vnav(text rounded) {{link.name }}
         //div(icon)
           v-icon.mr-2(size='24px') {{link.icon}}
           div(text)
 
-      //a(href='https://github.com/Fabezio/my_website-vuetify-nuxt', target='_blank')
+
+      a(href='https://github.com/Fabezio/my-website_tailwind-utility', target='_blank')
         v-btn(rounded)
           div(text)
           | mon code source
-          v-btn.vnav(rounded)
-          div(icon)
-            v-icon.mr-2(size='24px') fab fa-github
-      v-spacer
+
+      a(v-for='(link, index) in socialNetworks' :key='index' :href='link.url' target='_blank')
+        img.w-5.ml-2(:src='link.logo')
+
+
+
+
+
 
     v-col.footertext(cols='12')
       div.center-text {{ new Date().getFullYear() }}
@@ -41,7 +45,8 @@ export default {
   },
   computed: {
     ...mapState({
-      footerLinks: (state) => state.links.footerLinks
+      footerLinks: (state) => state.links.footerLinks,
+      socialNetworks: (state) => state.social.socialNetworks
     })
   }
 }
