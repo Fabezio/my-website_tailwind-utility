@@ -1,7 +1,7 @@
 <template lang="pug">
-  footer.bg-teal-500.p-3.text-white.fixed.inset-x-0.bottom-0
-    nav.flex.items-center.justify-between.flex-wrap
-    .flex.items-center.flex-shrink-0.text-white.mr-6
+  footer.bg-green-500.p-3.text-white.fixed.inset-x-0.bottom-0
+    nav.flex.items-center.justify-center.flex-wrap.pb-3
+      //.flex.items-center.flex-shrink-0.text-white.mr-6
 
       nuxt-link.route(v-for='(link, i) in footerLinks', :key='i' :to='link.route')
         v-btn.vnav(text rounded) {{link.name }}
@@ -14,9 +14,9 @@
         v-btn(rounded)
           div(text)
           | mon code source
-
+      div.mx-3 |
       a(v-for='(link, index) in socialNetworks' :key='index' :href='link.url' target='_blank')
-        img.w-5.ml-2(:src='link.logo')
+        img.w-6.ml-2(:src='link.logo')
 
 
 

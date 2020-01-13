@@ -1,6 +1,6 @@
 <template lang="pug">
 #cgu
-  h1.title.text-center Conditions générales d'utilisation
+  h1.text-center Conditions générales d'utilisation
   article.text-justify
     p Le présent document a pour objet de définir les modalités et conditions dans lesquelles d’une part, l’association
       span.society {{society}}

@@ -1,12 +1,8 @@
 <template lang="pug">
-  v-app
-    div(light)
-      Navbar()
-      v-content
-        v-container.my-6
-          nuxt
-      Footer
-
+div
+  Navbar
+  nuxt.container.my-5
+  Footer
 
 </template>
 
@@ -42,6 +38,9 @@ body {
   font-family: sans-serif;
   margin-top: 0;
   background: white !important;
+}
+h1 {
+  @apply text-5x1 font-bold;
 }
 
 p {
