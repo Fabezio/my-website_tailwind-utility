@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   Navbar
-  nuxt.container.my-5
+  nuxt.container.my-20
   Footer
 
 </template>
@@ -40,7 +40,13 @@ body {
   background: white !important;
 }
 h1 {
-  @apply text-5x1 font-bold;
+  @apply text-5xl font-bold;
+}
+h2 {
+  @apply text-4xl font-bold;
+}
+h3 {
+  @apply text-3xl font-bold;
 }
 
 p {

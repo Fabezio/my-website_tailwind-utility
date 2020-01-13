@@ -1,6 +1,6 @@
 <template lang="pug">
 div.sticky.inset-x-0
-  nav.flex.items-center.justify-between.flex-wrap.bg-green-500.p-3
+  nav.flex.items-center.justify-between.flex-wrap.bg-orange-500.p-3
     .flex.items-center.flex-shrink-0.text-white.mr-6
       nuxt-link.flex(to='/')
         img(src='@/assets/favicon-32.png')

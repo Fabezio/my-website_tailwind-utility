@@ -11,7 +11,9 @@ module.exports = {
       padding: '10rem'
     },
     fontSize: {
-      '5x1': '2.5rem'
+      '5xl': '2.5rem',
+      '4xl': '2.25rem',
+      '3xl': '2rem'
     }
   },
   variants: {},

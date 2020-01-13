@@ -3,14 +3,19 @@
   h1.text-center Conditions générales d'utilisation
   article.text-justify
     p Le présent document a pour objet de définir les modalités et conditions dans lesquelles d’une part, l’association
+
       span.society {{society}}
-      |  , ci-après dénommé
+      | , ci-après dénommé
+
+
       span.society {{society}}
       | , met à la disposition de ses utilisateurs le site, et les services disponibles sur le site et d’autre part, la manière par laquelle l’utilisateur accède au site et utilise ses services.
     p Toute connexion au site est subordonnée au respect des présentes conditions.
       | Pour l’utilisateur, le simple accès au site de
+
       span.society {{society}}
       |  à l’adresse URL suivante:
+
       span.web.text-lowercase {{web}}
       |  implique l’acceptation de l’ensemble des conditions décrites ci-après.
   h3.subtitle.is-3 Propriété intellectuelle
@@ -20,32 +25,30 @@
   h3.subtitle.is-3 Liens hypertextes
   article.text-justify
     p Le site
-      span.web.text-lowercase {{web}}
+      span.web.text-lowercase(v-html='space') {{web}}
       |  peut contenir des liens hypertextes vers d’autres sites présents sur le Il est possible de créer un lien vers la page de présentation de ce site sans autorisation expresse de
-      span.society {{society}}
+      span.society(v-html='space') {{society}}
       | . Aucune autorisation ou demande d’information préalable ne peut être exigée par
-      span.editor.text-lowercase
-        | {{editor}}
+      span.editor.text-lowercase(v-html='space') {{editor}}
         span(v-html='trade')
       |  à l’égard d’un site qui souhaite établir un lien vers le site de
-      span.editor.text-lowercase
-        | {{editor}}
+      span.editor.text-lowercase(v-html='space') {{editor}}
         span(v-html='trade')
       | . Il convient toutefois d’afficher ce site dans une nouvelle fenêtre du navigateur. Cependant,
-      span.society {{society}}
+      span.society(v-html='space') {{society}}
       |  se réserve le droit de demander la suppression d’un lien qu’il estime non conforme à l’objet du site
-      span.web.text-lowercase {{web}}
+
+      span.web.text-lowercase(v-html='space') {{web}}
     p
-  h3.subtitle.is-3 Responsabilité de
-    span.editor.text-lowercase
-      | {{editor}}
-      span(v-html='trade')
+  h3.subtitle.is-3 Responsabilité de l'éditeur
+    // span.editor.text-lowercase(v-html='space') {{editor}}
+    // span(v-html='trade')
   article.text-justify
     p Les informations et/ou documents figurant sur ce site et/ou accessibles par ce site proviennent de sources considérées comme étant fiables.
       br
       | Toutefois, ces informations et/ou documents sont susceptibles de contenir des inexactitudes techniques et des erreurs typographiques.
       br
-      span.society {{society}}
+      span.society(v-html='space') {{society}}
       |  se réserve le droit de les corriger, dès que ces erreurs sont portées à sa connaissance.
       br
       | Il est fortement recommandé de vérifier l’exactitude et la pertinence des informations et/ou documents mis à disposition sur ce site.
@@ -53,10 +56,11 @@
       | Les informations et/ou documents disponibles sur ce site sont susceptibles d’être modifiés à tout moment, et peuvent avoir fait l’objet de mises à jour. En particulier, ils peuvent avoir fait l’objet d’une mise à jour entre le moment de leur téléchargement et celui où l’utilisateur en prend connaissance.
       br
       | L’utilisation des informations et/ou documents disponibles sur ce site se fait sous l’entière et seule responsabilité de l’utilisateur, qui assume la totalité des conséquences pouvant en découler, sans que
-      span.society {{society}}
+
+      span.society(v-html='space') {{society}}
       |  puisse être recherché à ce titre, et sans recours contre ce dernier.
       br
-      span.society {{society}}
+      span.society(v-html='space') {{society}}
       |  ne pourra en aucun cas être tenu responsable de tout dommage de quelque nature qu’il soit résultant de l’interprétation ou de l’utilisation des informations et/ou documents disponibles sur ce site.
 
   h3.subtitle.is-3 Accès au site
@@ -66,30 +70,32 @@
         | {{editor}}
         span(v-html='trade')
       |  s’efforce de permettre l’accès au site 24 heures sur 24, 7 jours sur 7, sauf en cas de force majeure ou d’un événement hors du contrôle de
-      span.society {{society}}
+
+      span.society(v-html='space') {{society}}
       | , et sous réserve des éventuelles pannes et interventions de maintenance nécessaires au bon fonctionnement du site et des services.
       br
       | Par conséquent,
-      span.society {{society}}
+
+      span.society(v-html='space') {{society}}
       |  ne peut garantir une disponibilité du site et/ou des services, une fiabilité des transmissions et des performances en terme de temps de réponse ou de qualité. Il n’est prévu aucune assistance technique vis à vis de l’utilisateur que ce soit par des moyens électronique ou téléphonique.
       br
       | La responsabilité de
-      span.editor.text-lowercase
-        | {{editor}}
+      span.editor.text-lowercase(v-html='space') {{editor}}
         span(v-html='trade')
       |  ne saurait être engagée en cas d’impossibilité d’accès à ce site et/ou d’utilisation des services.
       br
       | Par ailleurs,
-      span.society {{society}}
+
+      span.society(v-html='space') {{society}}
       |  peut être amené à interrompre le site ou une partie des services, à tout moment sans préavis, le tout sans droit à indemnités. L’utilisateur reconnaît et accepte que
-      span.society {{society}}
+
+      span.society(v-html='space') {{society}}
       |  ne soit pas responsable des interruptions, et des conséquences qui peuvent en découler pour l’utilisateur ou tout tiers.
     p
   h3.subtitle.is-3 Modification des conditions d’utilisation
   article.text-justify
     p
-      span.editor.text-lowercase
-        | {{editor}}
+      span.editor.text-lowercase {{editor}}
         span(v-html='trade')
       |  se réserve la possibilité de modifier, à tout moment et sans préavis, les présentes conditions d’utilisation afin de les adapter aux évolutions du site et/ou de son exploitation.
     p
@@ -101,7 +107,8 @@
       |  n’assume aucune responsabilité sur les services accessibles par Internet et n’exerce aucun contrôle de quelque forme que ce soit sur la nature et les caractéristiques des données qui pourraient transiter par l’intermédiaire de son centre serveur.
       br
       | L’utilisateur reconnaît que les données circulant sur Internet ne sont pas protégées notamment contre les détournements éventuels. La présence du logo
-      span.web.text-lowercase {{web}}
+
+      span.web.text-lowercase(v-html='space') {{web}}
       |  institue une présomption simple de validité. La communication de toute information jugée par l’utilisateur de nature sensible ou confidentielle se fait à ses risques et périls.
       br
       | L’utilisateur reconnaît que les données circulant sur Internet peuvent être réglementées en termes d’usage ou être protégées par un droit de propriété.
@@ -109,16 +116,19 @@
       | L’utilisateur est seul responsable de l’usage des données qu’il consulte, interroge et transfère sur Internet.
       br
       | L’utilisateur reconnaît que
-      span.society {{society}}
+
+      span.society(v-html='space') {{society}}
       |  ne dispose d’aucun moyen de contrôle sur le contenu des services accessibles sur Internet.
   h3.subtitle.is-3 Collecte de données personnelles
   article.text-justify
     p Les informations recueillies (numéros de téléphone et adresses mail) font l’objet d’un traitement informatique destiné à la gestion de la clientèle. Ces informations ne seront pas utilisées à but commercial. Le destinataire des données est l’association
-      span.society {{society}}
+
+      span.society(v-html='space') {{society}}
       |   et les entreprises inscrites sur le site.
       br
       | Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée en 2004, vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant à
-      span.email {{email}}
+
+      span.email(v-html='space') {{email}}
       | .
       br
       | Vous pouvez également, pour des motifs légitimes, vous opposer au traitement des données vous concernant.
@@ -130,7 +140,8 @@
       | Pour toute question relative aux présentes conditions d’utilisation du site, vous pouvez nous écrire à l’adresse suivante :
     ul
       li Association
-        span.society {{society}}
+
+        span.society(v-html='space') {{society}}
       li 218 rue Saint-Denis
       li 75002 Paris
   article.text-justify
@@ -153,7 +164,8 @@ export default {
       editor: 'fabezio',
       society: 'MWASTERS',
       email: 'fabezio@outlook.fr',
-      trade: '&trade;'
+      trade: '&trade;',
+      space: '&nbsp;'
     }
   },
   head() {

@@ -60,9 +60,10 @@ export const state = () => ({
           desc: 'Framework semblable à BootStrap, bibliothèque Sass'
         },
         {
-          name: 'Tailwind CSS',
+          name: 'Tailwind',
           version: '1.x',
-          img: 'https://tailwindcss.com',
+          img:
+            'https://pic.vsixhub.com/42/e2/6226e0be-5975-4616-948c-545d562adc1d-logo.png',
           description: 'librairie css'
         }
       ]

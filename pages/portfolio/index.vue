@@ -2,10 +2,10 @@
   div
     h1.text-center.mb-4.header-shadow Portfolio
     h2.text-center.mb-3 Sites créés en formation:
-    v-row(justify='center' )
+    .flex.mb-4.h-full(justify='center')
       v-col.text-center(cols='12' md='4' justify='center' v-for='(creation, i) in created', :key='i')
         a(:href='"https://"+creation.url' target='_blank')
-          v-img.banner(aspect-ratio='1.6' data-toggle='modal', :data-target="'#' + creation.mod", :src='creation.banner', :alt='creation.alt', height='auto' width='')
+          img.banner(aspect-ratio='1.6' data-toggle='modal', :data-target="'#' + creation.mod", :src='creation.banner', :alt='creation.alt', height='auto' width='')
         v-container
             v-row.ma-0(justify='center' )
               v-btn-toggle( v-model='noToggle' )
@@ -14,30 +14,23 @@
                 v-dialog(v-model='dialog' persistent='' )
                   template(v-slot:activator='{ on }')
                     v-btn(color="success" text @='on' block  ) test
-                  v-card(:id='creation.mod')
-                    v-card-title.headline Use Google's location service?
-                    v-card-text
-                      | Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
-                    v-card-actions
-                      v-spacer
-                      v-btn(color='green darken-1', text='', @click='dialog = false') Disagree
-                      v-btn(color='green darken-1', text='', @click='dialog = false') Agree
 
-        // v-card-text
+
+        v-card-text
           h3.card-title.text-uppercase {{creation.name}}
           p.text-center.card-text.display-5 {{creation.desc}}
-        //v-card
+        v-card
 
 
 
 
 
-    // article
+    //article
 
-      v-row(justify="center")
+      .flex.mb-4.w-full(justify="center")
         v-col(cols='4')
           .card.silver-shadow.text-center(v-for='(creation, i) in created', :key='i')
-            v-img.card-img-top(data-toggle='modal', :data-target="'#' + creation.mod", :src='creation.img', :alt='creation.alt')
+            img.card-img-top(data-toggle='modal', :data-target="'#' + creation.mod", :src='creation.img', :alt='creation.alt')
 
             v-card-text
               h3.card-title.text-uppercase {{creation.name}}
@@ -46,7 +39,7 @@
               a.btn.btn-outline-link.display-5.text-uppercase(:href="'https://' + creation.url", target='_blank')
                 i.fas.fa-sign-in-alt
                 | Consulter
-    //.modal.collapse.fade(v-for='creation in creations', :key='creation.mod', :id='creation.mod')
+    .modal.collapse.fade(v-for='creation in creations', :key='creation.mod', :id='creation.mod')
       .modal-dialog.modal-md
         .modal-content
           .modal-header
