@@ -1,10 +1,8 @@
 <template lang="pug">
-  v-app
-    Navbar
-    v-content
-      v-content.my-6
-        nuxt
-    Footer
+div
+  Navbar
+  nuxt.container
+  Footer
 
 </template>
 

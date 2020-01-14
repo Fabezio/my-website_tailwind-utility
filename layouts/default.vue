@@ -34,6 +34,22 @@ export default {
 </script>
 
 <style>
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+.btn-warning {
+  @apply bg-yellow-500 text-white;
+}
+.btn-warning:hover {
+  @apply bg-yellow-700;
+}
+
 body {
   font-family: sans-serif;
   margin-top: 0;

@@ -7,13 +7,13 @@
 module.exports = {
   theme: {
     container: {
-      center: true,
-      padding: '10rem'
+      center: true
+
     },
     fontSize: {
       '5xl': '2.5rem',
-      '4xl': '2.25rem',
-      '3xl': '2rem'
+      '4xl': '2rem',
+      '3xl': '1.5rem'
     }
   },
   variants: {},
