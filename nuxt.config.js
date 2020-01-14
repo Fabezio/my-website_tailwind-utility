@@ -24,6 +24,12 @@ export default {
    ** Global CSS
    */
   css: [],
+  scripts: [
+    {
+      src: 'https://kit.fontawesome.com/347214cdeb.js',
+      crossorigin: 'anonymous'
+    }
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -42,7 +48,8 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/font-awesome'
   ],
   /*
    ** Axios module configuration

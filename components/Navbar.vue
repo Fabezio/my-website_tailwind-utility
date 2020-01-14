@@ -1,10 +1,10 @@
 <template lang="pug">
 div.sticky.inset-x-0
   nav.flex.items-center.justify-between.flex-wrap.bg-orange-500.p-3
-    .flex.items-center.flex-shrink-0.text-white.mr-6
-      nuxt-link.flex(to='/')
+    .flex.items-center.flex-shrink-0.text-white.mr-3
+      nuxt-link.flex.btn.items-center(to='/')
         img(src='@/assets/favicon-32.png')
-        span.ml-2.font-semibold.text-xl.tracking-tight fabezio.com
+        h2.ml-2.font-semibold.text-xl.tracking-tight fabezio.com
     .block(class='lg:hidden')
       button.flex.items-center.px-3.py-2.border.rounded.text-teal-200.border-teal-400(class='hover:text-white hover:border-white')
         svg.fill-current.h-3.w-3(viewBox='0 0 20 20', xmlns='http://www.w3.org/2000/svg')
@@ -14,7 +14,7 @@ div.sticky.inset-x-0
       div(v-for='(link, i) in navbarLinks', :key='i')
         nuxt-link(class='lg:flex-grow' :to='link.route')
           // div(icon) {{link.icon}}
-          .block.mt-4.text-teal-200.mr-4(class='lg:inline-block lg:mt-0 hover:text-white') {{link.name }}
+          .btn.text-3xl.block.mt-4.text-teal-200(class='lg:inline-block lg:mt-0 hover:text-white') {{link.name }}
       //.text-sm(class='lg:flex-grow')
         a.block.mt-4.text-teal-200.mr-4(href='#responsive-header', class='lg:inline-block lg:mt-0 hover:text-white')
           | Docs
