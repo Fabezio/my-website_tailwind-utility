@@ -5,11 +5,13 @@ export const state = () => ({
       name: 'accueil',
       icon: 'fas fa-home'
     },
-    // {
-    //  route: '/service',
-    //  name: 'services',
-    //  icon: 'fas fa-user-tie'
-    // },
+    /*
+     {
+      route: '/service',
+      name: 'services',
+      icon: 'fas fa-user-tie'
+     },
+      */
     {
       route: '/skills',
       name: 'compétences',

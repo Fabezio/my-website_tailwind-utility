@@ -1,17 +1,21 @@
 <template lang="pug">
-  footer.bg-orange-600.p-3.text-white.fixed.inset-x-0.bottom-0.border-t.border-yellow-700
+  footer.bg-purple-600.p-3.text-white.inset-x-0.border-t.border-purple-700
     nav.flex.items-center.justify-center.flex-wrap.pb-3
       //.flex.items-center.flex-shrink-0.text-white.mr-6
 
-      nuxt-link.route(v-for='(link, i) in footerLinks', :key='i' :to='link.route')
-        button.btn {{link.name }}
-        //div(icon)
-          v-icon.mr-2(size='24px') {{link.icon}}
-          div(text)
+      div(v-for='(link, i) in footerLinks', :key='i')
+        button.indigo.btn
+          nuxt-link.route(class='xl:hidden' :to='link.route')
+            span.mr-2(:class='link.icon')
+            span.uppercase {{link.name }}
 
 
-      a(href='https://github.com/Fabezio/my-website_tailwind-utility', target='_blank')
-        button.btn mon code source
+
+      a.indigo(href='https://github.com/Fabezio/my-website_tailwind-utility', target='_blank')
+        button.btn
+          span.mr-2.fab.fa-github-alt
+          span.uppercase mon code source
+
       div.mx-3 |
       a(v-for='(link, index) in socialNetworks' :key='index' :href='link.url' target='_blank')
         img.w-6.ml-2(:src='link.logo')

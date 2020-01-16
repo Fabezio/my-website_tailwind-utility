@@ -39,7 +39,7 @@
         input#checkbox.mr-2(prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='checkbox', v-model='checkbox' )
         label(v-model="checkbox" label="") Je certifie que toutes les informations fournies ci-dessus sont exactes
       div#submit.flex
-        input.btn.btn-blue.mr-2(type='submit' email:to='fabezio@outlook.fr' value='Envoyer')
+        input.btn.btn-blue.mr-2(type='submit' href='mailto:fabezio@outlook.fr' value='Envoyer')
         button.btn.btn-warning(color="info") Annuler
 
 </template>

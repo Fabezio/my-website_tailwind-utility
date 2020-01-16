@@ -14,6 +14,11 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/347214cdeb.js'
+      }
+    ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
@@ -24,12 +29,6 @@ export default {
    ** Global CSS
    */
   css: [],
-  scripts: [
-    {
-      src: 'https://kit.fontawesome.com/347214cdeb.js',
-      crossorigin: 'anonymous'
-    }
-  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -49,7 +48,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/font-awesome'
+    'nuxt-material-design-icons'
   ],
   /*
    ** Axios module configuration

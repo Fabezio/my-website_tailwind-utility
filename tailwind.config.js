@@ -8,7 +8,6 @@ module.exports = {
   theme: {
     container: {
       center: true
-
     },
     fontSize: {
       '5xl': '2.5rem',

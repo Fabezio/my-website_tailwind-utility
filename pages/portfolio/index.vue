@@ -2,11 +2,14 @@
   div
     h1.text-center.mb-4.header-shadow Portfolio
     h2.text-center.mb-3 Sites créés en formation:
-    .flex.mb-4.h-full(justify='center')
-      v-col.text-center(cols='12' md='4' justify='center' v-for='(creation, i) in created', :key='i')
-        a(:href='"https://"+creation.url' target='_blank')
-          img.banner(aspect-ratio='1.6' data-toggle='modal', :data-target="'#' + creation.mod", :src='creation.banner', :alt='creation.alt', height='auto' width='')
-        v-container
+    .flex.mb-4.h-full
+      div(v-for='(creation, i) in created', :key='i')
+        .text-center(cols='12' md='4' justify='center' )
+          a(:href='"https://"+creation.url' target='_blank')
+            div.thumbnail.flex.items-center.bg-blue-200.m-2.py-3.px-2.rounded
+              img.banner(aspect-ratio='1.6' data-toggle='modal', :data-target="'#' + creation.mod", :src='creation.banner', :alt='creation.alt')
+
+        //v-container
             v-row.ma-0(justify='center' )
               v-btn-toggle( v-model='noToggle' )
                 a(:href='"https://"+creation.url')
@@ -14,12 +17,12 @@
                 v-dialog(v-model='dialog' persistent='' )
                   template(v-slot:activator='{ on }')
                     v-btn(color="success" text @='on' block  ) test
-
-
-        v-card-text
+        // v-card-text
           h3.card-title.text-uppercase {{creation.name}}
           p.text-center.card-text.display-5 {{creation.desc}}
-        v-card
+        //  v-card
+
+
 
 
 
@@ -39,22 +42,22 @@
               a.btn.btn-outline-link.display-5.text-uppercase(:href="'https://' + creation.url", target='_blank')
                 i.fas.fa-sign-in-alt
                 | Consulter
-    .modal.collapse.fade(v-for='creation in creations', :key='creation.mod', :id='creation.mod')
-      .modal-dialog.modal-md
-        .modal-content
-          .modal-header
-            h4 {{creation.name}}
-            button.close(data-dismiss='modal') ×
-          .modal-body
-            img.w-100(:src='creation.img')
-          .modal-footer
-            .btn-group.btn-lg.btn-rounded
-              button.btn.btn-dark(data-dismiss='modal')
-                i.mr-1.far.fa-window-close.text-danger.text-light
-                |  Annuler
-              a.btn.btn-success(:href="'https://' + creation.url", target='_blank')
-                i.mr-1.fas.fa-sign-in-alt
-                |  Aller
+            .modal.collapse.fade(v-for='creation in creations', :key='creation.mod', :id='creation.mod')
+              .modal-dialog.modal-md
+                .modal-content
+                  .modal-header
+                    h4 {{creation.name}}
+                    button.close(data-dismiss='modal') ×
+                  .modal-body
+                    img.w-100(:src='creation.img')
+                  .modal-footer
+                    .btn-group.btn-lg.btn-rounded
+                      button.btn.btn-dark(data-dismiss='modal')
+                        i.mr-1.far.fa-window-close.text-danger.text-light
+                        |  Annuler
+                      a.btn.btn-success(:href="'https://' + creation.url", target='_blank')
+                        i.mr-1.fas.fa-sign-in-alt
+                        |  Aller
 
 </template>
 
@@ -97,17 +100,20 @@ export default {
 </script>
 
 <style scoped>
+.thumbnail {
+  width: 320px;
+  height: 240px;
+  border: 1px solid skyblue;
+}
 .banner {
-  filter: sepia(100%);
+  filter: grayscale(100%);
   opacity: 0.75;
-  border-radius: 5px;
-  border: grey outset 3px;
+
   cursor: pointer;
 }
 .banner:hover {
-  filter: sepia(50%);
+  filter: grayscale(0%);
   opacity: 1;
-  border: lightsalmon inset 3px;
 }
 .visit-button {
   /* position: relative; */
