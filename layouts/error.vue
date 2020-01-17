@@ -7,7 +7,6 @@ div
 
   nuxtlink(to='/') Home page
 
-
 </template>
 
 <script>

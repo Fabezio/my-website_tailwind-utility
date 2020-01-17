@@ -20,7 +20,6 @@ div.sticky.inset-x-0
             iconstack(:faclass='link.icon')
               span.route {{link.name}}
 
-
 </template>
 
 <script>

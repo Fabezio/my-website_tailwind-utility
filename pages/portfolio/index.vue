@@ -22,12 +22,6 @@
           p.text-center.card-text.display-5 {{creation.desc}}
         //  v-card
 
-
-
-
-
-
-
     //article
 
       .flex.mb-4.w-full(justify="center")

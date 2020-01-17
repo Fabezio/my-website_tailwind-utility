@@ -1,7 +1,8 @@
 <template lang="pug">
 div
   Navbar
-  nuxt.container.my-20
+  MoreInfo
+  nuxt.min-h-full.container.my-20
   Footer
 
 </template>
@@ -10,9 +11,11 @@ div
 // import pdf from 'vue-pdf';
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import MoreInfo from '@/components/MoreInfo'
 export default {
   components: {
     Navbar,
+    MoreInfo,
     Footer
   },
   data() {
@@ -49,6 +52,9 @@ export default {
 .btn-warning:hover {
   @apply bg-yellow-700;
 }
+.btn-purple {
+  @apply bg-purple-600;
+}
 
 body {
   font-family: sans-serif;
@@ -73,6 +79,9 @@ p:first-letter {
 }
 .indigo {
   color: indigo !important;
+}
+.indigo:active {
+  @apply text-red-300;
 }
 /*
 E cas de nouveaux styles

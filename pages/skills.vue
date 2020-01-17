@@ -8,7 +8,7 @@
             .bg-green-100
               img.min-w-full.w-screen(rounded :src='card.img', alt='', )
             hr
-            figcaption.text-md.rounded-b.bg-orange-600.text-white {{card.name}}
+            figcaption.text-md.rounded-b.bg-purple-600.text-white {{card.name}}
 
 
 

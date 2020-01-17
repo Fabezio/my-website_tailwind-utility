@@ -9,8 +9,6 @@
             span.mr-2(:class='link.icon')
             span.uppercase {{link.name }}
 
-
-
       a.indigo(href='https://github.com/Fabezio/my-website_tailwind-utility', target='_blank')
         button.btn
           span.mr-2.fab.fa-github-alt
@@ -20,17 +18,9 @@
       a(v-for='(link, index) in socialNetworks' :key='index' :href='link.url' target='_blank')
         img.w-6.ml-2(:src='link.logo')
 
-
-
-
-
-
     v-col.footertext(cols='12')
       div.center-text {{ new Date().getFullYear() }}
         strong  &copy; fabezio.com
-
-
-
 
 </template>
 
