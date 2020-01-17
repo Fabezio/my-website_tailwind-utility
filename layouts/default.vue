@@ -38,16 +38,21 @@ export default {
 
 <style>
 .btn {
-  @apply font-bold py-2 px-4 rounded;
+  @apply font-bold;
+  @apply py-2;
+  @apply px-4;
+  @apply rounded;
 }
 .btn-blue {
-  @apply bg-blue-500 text-white;
+  @apply bg-blue-500;
+  @apply text-white;
 }
 .btn-blue:hover {
   @apply bg-blue-700;
 }
 .btn-warning {
-  @apply bg-yellow-500 text-white;
+  @apply bg-yellow-500;
+  @apply text-white;
 }
 .btn-warning:hover {
   @apply bg-yellow-700;
@@ -55,21 +60,25 @@ export default {
 .btn-purple {
   @apply bg-purple-600;
 }
+h1 {
+  @apply text-5xl;
+  @apply font-bold;
+}
+h2 {
+  @apply text-4xl;
+  @apply font-bold;
+}
+h3 {
+  @apply text-3xl;
+  @apply font-bold;
+}
 
 body {
   font-family: sans-serif;
   margin-top: 0;
   background: white !important;
 }
-h1 {
-  @apply text-5xl font-bold;
-}
-h2 {
-  @apply text-4xl font-bold;
-}
-h3 {
-  @apply text-3xl font-bold;
-}
+
 p {
   text-align: justify;
   text-indent: 1rem;
