@@ -5,7 +5,7 @@
       .flex
         div.border.rounded.m-4(v-for='card in code.content', :key='card.name')
           figure.p-2
-            .bg-green-100
+            .bg-purple-200
               img.min-w-full.w-screen(rounded :src='card.img', alt='', )
             hr
             figcaption.text-md.rounded-b.bg-purple-600.text-white {{card.name}}

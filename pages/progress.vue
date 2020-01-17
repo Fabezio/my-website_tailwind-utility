@@ -6,6 +6,8 @@ div
     li adaptation responsive
     li dynamisation
     li inclusion horloge numérique
+    li optimisation page contact (formulaire)
+    li redaction de la rubrique d'aide
 </template>
 
 <script>

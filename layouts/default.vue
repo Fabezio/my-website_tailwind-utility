@@ -2,6 +2,7 @@
 div
   Navbar
   MoreInfo
+  Clock
   nuxt.min-h-full.container.my-20
   Footer
 
@@ -10,11 +11,13 @@ div
 <script>
 // import pdf from 'vue-pdf';
 import Navbar from '@/components/Navbar'
+import Clock from '@/components/Clock'
 import Footer from '@/components/Footer'
 import MoreInfo from '@/components/MoreInfo'
 export default {
   components: {
     Navbar,
+    Clock,
     MoreInfo,
     Footer
   },
@@ -93,7 +96,7 @@ p:first-letter {
   @apply text-red-300;
 }
 .nuxt-link-exact-active:not(.brand) {
-  @apply rounded-lg;
+  @apply rounded-full;
   @apply bg-purple-300;
   @apply py-3;
 }
