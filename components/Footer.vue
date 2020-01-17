@@ -4,8 +4,8 @@
       //.flex.items-center.flex-shrink-0.text-white.mr-6
 
       div(v-for='(link, i) in footerLinks', :key='i')
-        button.indigo.btn
-          nuxt-link.route(class='xl:hidden' :to='link.route')
+        nuxt-link.route(class='xl:hidden' :to='link.route')
+          button.indigo.btn
             span.mr-2(:class='link.icon')
             span.uppercase {{link.name }}
 

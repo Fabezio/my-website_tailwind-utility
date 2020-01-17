@@ -92,6 +92,11 @@ p:first-letter {
 .indigo:active {
   @apply text-red-300;
 }
+.nuxt-link-exact-active:not(.brand) {
+  @apply rounded-lg;
+  @apply bg-purple-300;
+  @apply py-3;
+}
 /*
 E cas de nouveaux styles
 */

@@ -34,6 +34,7 @@ export const state = () => ({
     }
   ],
   footerLinks: [
+    /*
     {
       route: '/map',
       name: 'plan du site',
@@ -50,9 +51,10 @@ export const state = () => ({
       icon: 'fas fa-question'
       // },
       // {
-      //   route: '/faq',
-      //   name: 'foire aux questions',
-      //   icon: 'fas fa-question-circle'
-    }
+        //   route: '/faq',
+        //   name: 'foire aux questions',
+        //   icon: 'fas fa-question-circle'
+      }
+ */
   ]
 })

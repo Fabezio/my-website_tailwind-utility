@@ -2,7 +2,7 @@
 div.sticky.inset-x-0
   nav.flex.items-center.justify-between.flex-wrap.bg-purple-600
     .flex.items-center.flex-shrink-0.text-white.mr-3
-      nuxt-link.flex.btn.items-center(to='/')
+      nuxt-link.brand.flex.btn.items-center(to='/')
         img(src='@/assets/favicon-32.png')
         h2.ml-2.font-semibold.text-xl.tracking-tight.uppercase fabezio.com
 
