@@ -1,10 +1,10 @@
 <template lang="pug">
-v-container
-  h1.text-center Fiche de {{portfolio.name}}
-  .flex
+div
+  h1.text-center.mb-4 {{portfolio.name}}
+  .flex.items-center.mx-auto
     div
       img(:src="portfolio.img" :alt="portfolio.alt" aspect-ratio='1.7')
-    .items-center.text-center
+    .mx-auto
       h3 {{portfolio.desc}}
 
 
