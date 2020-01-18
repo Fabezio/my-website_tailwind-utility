@@ -2,7 +2,7 @@
 div
   Navbar
   MoreInfo
-  Clock
+  // Clock
   nuxt.min-h-full.container.my-20
   Footer
 

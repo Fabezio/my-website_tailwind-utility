@@ -1,20 +1,10 @@
 <template lang="pug">
 .container
-  .timer.float-right
-    span.minute {{ minutes }}
+  .float-right
+    span.minute {{ date }}
     span :
-    span.seconds {{ seconds }}
-  .controls
-    .start(v-if='!timer', @click='startTimer')
-      i(data-feather='play')
-    .pause(v-if='timer', @click='stopTimer')
-      i(data-feather='square')
-    .stop(v-if='resetButton', @click='resetTimer')
-      i(data-feather='rotate-cw')
-    .edit(v-if='!timer', @click='editTimer')
-      i(data-feather='edit-2')
-  .input
-    input(type='text', v-if='edit')
+    span.seconds {{ time }}
+
 
 </template>
 
@@ -22,50 +12,78 @@
 export default {
   data() {
     return {
-      timer: null,
-      totalTime: 25 * 60,
-      resetButton: false,
-      title: 'Countdown to rest time!',
-      edit: false
-    }
-  },
-  computed: {
-    minutes() {
-      const minutes = Math.floor(this.totalTime / 60)
-      return this.padTime(minutes)
-    },
-    seconds() {
-      const seconds = this.totalTime - this.minutes * 60
-      return this.padTime(seconds)
+      time: '',
+      date: '',
+      week: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'],
+      timerID: '',
+      cd: new Date()
     }
   },
   methods: {
-    startTimer() {
-      this.timer = setInterval(() => this.countdown(), 1000) // 1000ms = 1 second
-      this.resetButton = true
+    updateTime() {
+      this.time =
+        this.zeroPadding(this.cd.getHours(), 2) +
+        ':' +
+        this.zeroPadding(this.cd.getMinutes(), 2) +
+        ':' +
+        this.zeroPadding(this.cd.getSeconds(), 2)
+      this.date =
+        this.zeroPadding(this.cd.getFullYear(), 4) +
+        '-' +
+        this.zeroPadding(this.cd.getMonth() + 1, 2) +
+        '-' +
+        this.zeroPadding(this.cd.getDate(), 2) +
+        ' ' +
+        this.week[this.cd.getDay()]
     },
-    stopTimer() {
-      clearInterval(this.timer)
-      this.timer = null
-      this.resetButton = true
-    },
-    resetTimer() {
-      this.totalTime = 25 * 60
-      clearInterval(this.timer)
-      this.timer = null
-      this.resetButton = false
-    },
-    editTimer() {
-      this.edit = true
-    },
-    padTime(time) {
-      return (time < 10 ? '0' : '') + time
-    },
-    countdown() {
-      this.totalTime--
+    zeroPadding(num, digit) {
+      let zero = ''
+      for (let i = 0; i < digit; i++) {
+        zero += '0'
+      }
+      return (zero + num).slice(-digit)
     }
   }
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #0f3854;
+  background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+  background-size: 100%;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+#clock {
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+  .time {
+    letter-spacing: 0.05em;
+    font-size: 80px;
+    padding: 5px 0;
+  }
+  .date {
+    letter-spacing: 0.1em;
+    font-size: 24px;
+  }
+  .text {
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    padding: 20px 0 0;
+  }
+}
+</style>

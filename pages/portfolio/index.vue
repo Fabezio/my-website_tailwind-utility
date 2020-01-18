@@ -3,11 +3,14 @@
     h1.text-center.mb-4.header-shadow Portfolio
     h2.text-center.mb-3 Sites créés en formation:
     .flex.mb-4.h-full
-      div(v-for='(creation, i) in created', :key='i')
-        .text-center(cols='12' md='4' justify='center' )
-          a(:href='"https://"+creation.url' target='_blank')
+      div(v-for='(creation, i) in portfolio', :key='i')
+        .text-center()
+          nuxt-link(
+            :to='{name: "portfolio-mod", params: {mod: creation.mod} }')
             div.thumbnail.flex.items-center.bg-blue-200.m-2.py-3.px-2.rounded
               img.banner(aspect-ratio='1.6' data-toggle='modal', :data-target="'#' + creation.mod", :src='creation.banner', :alt='creation.alt')
+          button.btn.btn-purple.text-white
+            a(:href='"https://"+creation.url' target='_blank') consulter
 
         //v-container
             v-row.ma-0(justify='center' )
@@ -26,7 +29,7 @@
 
       .flex.mb-4.w-full(justify="center")
         v-col(cols='4')
-          .card.silver-shadow.text-center(v-for='(creation, i) in created', :key='i')
+          .card.silver-shadow.text-center(v-for='(creation, i) in portfolio', :key='i')
             img.card-img-top(data-toggle='modal', :data-target="'#' + creation.mod", :src='creation.img', :alt='creation.alt')
 
             v-card-text
@@ -56,7 +59,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
 // import portfolio from './portfolio'
 export default {
   name: '',
@@ -71,9 +73,9 @@ export default {
     }
   },
   computed: {
-    ...mapState({
-      created: (state) => state.portfolio.created
-    })
+    portfolio() {
+      return this.$store.state.portfolio.portfolio
+    }
   },
   head() {
     return {

@@ -1,5 +1,7 @@
+import PortfolioService from '@/services/PortfolioService.js'
+
 export const state = () => ({
-  created: [
+  portfolio: [
     {
       id: '1',
       url: 'voyages.fabezio.com',
@@ -32,3 +34,25 @@ export const state = () => ({
     }
   ]
 })
+
+export const mutations = {
+  SET_PORTFOLIO(state, portfolio) {
+    state.portfolio = portfolio
+  },
+  SET_FOLIO(state, folio) {
+    state.folio = folio
+  }
+}
+
+export const actions = {
+  fetchPortfolio({ commit }) {
+    return PortfolioService.getPortfolio().then((response) =>
+      commit('SET_PORTFOLIO', response.data)
+    )
+  },
+  fetchFolio({ commit }, id) {
+    return PortfolioService.getFolio(id).then((response) =>
+      commit('SET_FOLIO', response.data)
+    )
+  }
+}
