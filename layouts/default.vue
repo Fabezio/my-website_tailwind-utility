@@ -1,9 +1,9 @@
 <template lang="pug">
 div
-  Navbar
+  Navbar.fixed.top-0
   MoreInfo
   // Clock
-  nuxt.min-h-full.container.my-20
+  nuxt.container.my-20
   Footer
 
 </template>

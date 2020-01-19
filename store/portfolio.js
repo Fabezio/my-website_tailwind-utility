@@ -5,8 +5,8 @@ export const state = () => ({
     {
       id: '1',
       url: 'travelagencyfabezio.netlify.com',
-      img: 'https://travelagencyfabezio.netlify.com/images/main.jpg',
-      banner: 'https://travelagencyfabezio.netlify.com/images/voyage.jpg',
+      img: 'https://travelagencyfabezio.netlify.com/Images/view.png',
+      banner: 'https://travelagencyfabezio.netlify.com/Images/view.png',
       mod: 'voyage',
       alt: 'travel agency',
       name: 'Travel Agency',
@@ -15,8 +15,8 @@ export const state = () => ({
     {
       id: '2',
       url: 'snakeey.netlify.com',
-      img: '@/assets/img/portfolio/serpent.jpg',
-      banner: '@/assets/img/portfolio/serpent.jpg',
+      img: 'https://snakeey.netlify.com/img/view.png',
+      banner: 'https://snakeey.netlify.com/img/view.png',
       mod: 'snakeey',
       alt: 'snakeey',
       name: 'Snakeey',
@@ -35,8 +35,8 @@ export const state = () => ({
     {
       id: '4',
       url: 'do-pe.netlify.com',
-      img: 'https://do-pe.netlify.com/img/main.jpg',
-      banner: 'https://do-pe.netlify.com/img/banner-overlay1.png',
+      img: 'https://do-pe.netlify.com/img/banner.jpg',
+      banner: 'https://do-pe.netlify.com/img/banner.jpg',
       alt: 'do-pe',
       mod: 'dope',
       name: 'Do-Pe',

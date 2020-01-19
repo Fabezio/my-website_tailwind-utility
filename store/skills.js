@@ -64,20 +64,22 @@ export const state = () => ({
           version: '1.x',
           img:
             'https://pic.vsixhub.com/42/e2/6226e0be-5975-4616-948c-545d562adc1d-logo.png',
-          description: 'librairie css'
+          description: 'librairie utilitaire css'
         }
       ]
     },
     {
       title: 'Rendu',
       content: [
+        /*
         {
           name: 'React',
           version: '16.11',
           img:
             'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
-          desc: 'Framework JS facilitant la création des sites web'
-        },
+            desc: 'Framework JS facilitant la création des sites web'
+          },
+          */
         {
           name: 'Vue JS',
           version: '2.6',

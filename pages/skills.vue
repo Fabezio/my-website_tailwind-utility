@@ -3,14 +3,12 @@
     h1.text-center.pb-5 Formations
     h2.text-center.pb-5(v-for='(code, i) in codes', :key='i', :href='`#${code.title}`') {{code.title}}
       .flex
-        div.border.rounded.m-4(v-for='card in code.content', :key='card.name')
+        div.border.rounded.m-4(class='' v-for='card in code.content', :key='card.name')
           figure.p-2
             .bg-purple-200
-              img.min-w-full.w-screen(rounded :src='card.img', alt='', )
+              img(class='w-screen w-full' rounded :src='card.img', alt='', )
             hr
             figcaption.text-md.rounded-b.bg-purple-600.text-white {{card.name}}
-
-
 
 </template>
 
