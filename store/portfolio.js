@@ -4,33 +4,43 @@ export const state = () => ({
   portfolio: [
     {
       id: '1',
-      url: 'voyages.fabezio.com',
-      img: 'https://cv.fabezio.com/img/voyage.png',
-      banner: 'https://voyages.fabezio.com/Images/main.jpg',
+      url: 'travelagencyfabezio.netlify.com',
+      img: 'https://travelagencyfabezio.netlify.com/images/main.jpg',
+      banner: 'https://travelagencyfabezio.netlify.com/images/voyage.jpg',
       mod: 'voyage',
-      alt: 'photo du site',
+      alt: 'travel agency',
       name: 'Travel Agency',
       desc: 'Premier site en HTML / CSS'
     },
     {
       id: '2',
-      url: 'snake.fabezio.com',
-      img: 'http://cv.fabezio.com/img/snake-maj.png',
-      banner: 'http://cv.fabezio.com/img/snake-maj.png',
-      mod: 'snake',
-      alt: 'photo du site',
-      name: 'Snakey',
+      url: 'snakeey.netlify.com',
+      img: '@/assets/img/portfolio/serpent.jpg',
+      banner: '@/assets/img/portfolio/serpent.jpg',
+      mod: 'snakeey',
+      alt: 'snakeey',
+      name: 'Snakeey',
       desc: 'Version JS de Snake'
     },
     {
       id: '3',
-      url: 'actrices.fabezio.com',
-      img: 'http://cv.fabezio.com/img/actrices.png',
-      banner: 'http://actrices.fabezio.com/img/color-image.jpg',
-      alt: 'photo du site',
+      url: 'topactrices.netlify.com',
+      img: 'https://topactrices.netlify.com/img/color-image.jpg',
+      banner: 'https://topactrices.netlify.com/img/color-image.jpg',
+      alt: 'top 5 actrices',
       mod: 'actrices',
       name: 'Top 5 Actrices',
       desc: 'Site en jQuery'
+    },
+    {
+      id: '4',
+      url: 'do-pe.netlify.com',
+      img: 'https://do-pe.netlify.com/img/main.jpg',
+      banner: 'https://do-pe.netlify.com/img/banner-overlay1.png',
+      alt: 'do-pe',
+      mod: 'dope',
+      name: 'Do-Pe',
+      desc: 'Site en VueJS 2'
     }
   ]
 })

@@ -6,12 +6,12 @@ div.sticky.inset-x-0
         img(src='@/assets/favicon-32.png')
         h2.ml-2.font-semibold.text-xl.tracking-tight.uppercase fabezio.com
 
-    .w-full.block.flex-grow(class='md:flex md:items-center md:w-auto')
+    .w-full.block.flex.flex-row(class=' md:items-center md:w-auto')
       div(v-for='(link, i) in navbarLinks', :key='i')
-        nuxt-link(class='md:flex-grow ' :to='link.route' :title='link.name')
-          button.btn.text-2xl.block.mt-4.indigo(class='md:inline-block md:mt-0 hover:text-white')
-            span.mr-2(:class='link.icon')
-            span(class='md:visible').uppercase {{link.name }}
+        nuxt-link.justify-center(class='text-2xl' :to='link.route' :title='link.name')
+          button.btn.block.mt-4.indigo(class='inline-block md:mt-0 hover:text-white')
+            span(:class='link.icon')
+            span.ml-2(class='invisible md:visible').uppercase {{link.name }}
 
     //.navbar-end
       .navbar-item

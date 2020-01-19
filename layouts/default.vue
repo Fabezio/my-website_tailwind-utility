@@ -95,7 +95,7 @@ p:first-letter {
 .indigo:active {
   @apply text-red-300;
 }
-.nuxt-link-exact-active:not(.brand) {
+.nuxt-link-exact-active:not(.brand) button {
   @apply rounded-full;
   @apply bg-purple-300;
   @apply py-3;

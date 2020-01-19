@@ -2,59 +2,15 @@
   div
     h1.text-center.mb-4.header-shadow Portfolio
     h2.text-center.mb-3 Sites créés en formation:
-    .flex.mb-4.h-full
+    .flex.mb-4.flex-wrap
       div(v-for='(creation, i) in portfolio', :key='i')
         .text-center()
           nuxt-link(
             :to='{name: "portfolio-mod", params: {mod: creation.mod} }')
             div.thumbnail.flex.items-center.bg-blue-200.m-2.py-3.px-2.rounded
-              img.banner(aspect-ratio='1.6' data-toggle='modal', :data-target="'#' + creation.mod", :src='creation.banner', :alt='creation.alt')
-          button.btn.btn-purple.text-white
-            a(:href='"https://"+creation.url' target='_blank') consulter
-
-        //v-container
-            v-row.ma-0(justify='center' )
-              v-btn-toggle( v-model='noToggle' )
-                a(:href='"https://"+creation.url')
-                  v-btn.visit-button( color='info' dark  block ) visiter
-                v-dialog(v-model='dialog' persistent='' )
-                  template(v-slot:activator='{ on }')
-                    v-btn(color="success" text @='on' block  ) test
-        // v-card-text
-          h3.card-title.text-uppercase {{creation.name}}
-          p.text-center.card-text.display-5 {{creation.desc}}
-        //  v-card
-
-    //article
-
-      .flex.mb-4.w-full(justify="center")
-        v-col(cols='4')
-          .card.silver-shadow.text-center(v-for='(creation, i) in portfolio', :key='i')
-            img.card-img-top(data-toggle='modal', :data-target="'#' + creation.mod", :src='creation.img', :alt='creation.alt')
-
-            v-card-text
-              h3.card-title.text-uppercase {{creation.name}}
-              p.card-text.display-5 {{creation.desc}}
-            .card-footer.mb-0
-              a.btn.btn-outline-link.display-5.text-uppercase(:href="'https://' + creation.url", target='_blank')
-                i.fas.fa-sign-in-alt
-                | Consulter
-            .modal.collapse.fade(v-for='creation in creations', :key='creation.mod', :id='creation.mod')
-              .modal-dialog.modal-md
-                .modal-content
-                  .modal-header
-                    h4 {{creation.name}}
-                    button.close(data-dismiss='modal') ×
-                  .modal-body
-                    img.w-100(:src='creation.img')
-                  .modal-footer
-                    .btn-group.btn-lg.btn-rounded
-                      button.btn.btn-dark(data-dismiss='modal')
-                        i.mr-1.far.fa-window-close.text-danger.text-light
-                        |  Annuler
-                      a.btn.btn-success(:href="'https://' + creation.url", target='_blank')
-                        i.mr-1.fas.fa-sign-in-alt
-                        |  Aller
+              img.banner(aspect-ratio='1.6' data-toggle='modal', :data-target="`#${ creation.mod}`", :src='creation.banner', :alt='creation.alt')
+          button.btn.btn-purple.text-white.mb-4
+            a(:href='`https://${creation.url}`' target='_blank') Aller
 
 </template>
 
