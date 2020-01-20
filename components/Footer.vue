@@ -18,7 +18,7 @@
       a(v-for='(link, index) in socialNetworks' :key='index' :href='link.url' target='_blank')
         img.w-6.ml-2(:src='link.logo')
 
-    v-col.footertext(cols='12')
+    div.footertext(cols='12')
       div.center-text {{ new Date().getFullYear() }}
         strong  &copy; fabezio.com
 

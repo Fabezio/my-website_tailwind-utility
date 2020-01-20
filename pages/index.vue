@@ -3,7 +3,7 @@
     .max-w-sm.w-full.border(class='lg:max-w-full lg:flex')
       img.w-auto.h-48.rounded-l(src='@/assets/img/me.jpg')
       .bg-white.rounded-b.p-4.flex.flex-col.justify-around.leading-normal(class='lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r')
-        h1.mb-3.text-left fabezio.com
+        h1.mb-3.text-left fabezio.org
         h2 Développeur Web FrontEnd spécialisé JS
 
     div.py-auto

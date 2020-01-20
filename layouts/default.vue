@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   Navbar.top-0.fixed
-  MoreInfo.top-1.w-screen.fixed
+  MoreInfo
   // Clock
   nuxt.container.my-20.h-screen
   Footer.fixed.bottom-0.mt-5.pt-5
@@ -43,7 +43,6 @@ export default {
 .btn {
   @apply font-bold;
   @apply py-2;
-  @apply px-4;
   @apply rounded;
 }
 .btn-blue {
@@ -87,7 +86,7 @@ p {
   text-indent: 1rem;
 }
 p:first-letter {
-  font-size: 1.25rem;
+  font-size: 17px;
 }
 .indigo {
   color: indigo !important;
@@ -96,7 +95,7 @@ p:first-letter {
   @apply text-red-300;
 }
 .nuxt-link-exact-active:not(.brand) button {
-  @apply rounded-full;
+  @apply underline;
   @apply bg-purple-300;
   @apply py-3;
 }
