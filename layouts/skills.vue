@@ -3,8 +3,8 @@ div
   Navbar.top-0.fixed
   MoreInfo.top-1.w-screen.fixed
   // Clock
-  nuxt.container.my-20.h-screen
-  Footer.fixed.bottom-0.mt-5.pt-5
+  nuxt.container.my-20
+  Footer.mt-5.pt-5
 
 </template>
 

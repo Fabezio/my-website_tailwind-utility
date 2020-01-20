@@ -6,7 +6,7 @@
         h1.mb-3.text-left fabezio.com
         h2 Développeur Web FrontEnd spécialisé JS
 
-    div
+    div.py-auto
       h2.p-5.text-center Bienvenue sur ce site!
 
       p Si vous êtes ici, c'est que vous avez besoin d'un développeur web, en freelance ou contrat interne. J'ai envie de vous dire que vous êtes au bon endroit; néanmoins vous émettez certainement des réserves et avez besoin de preuves de mes compétences. C'est pourquoi tout est décrit ici.

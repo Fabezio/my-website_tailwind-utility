@@ -20,7 +20,7 @@ export const state = () => ({
         {
           name: 'JavaScript',
           img:
-            'http://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png?t=636356437130000000',
+            'https://addons-media.operacdn.com/media/CACHE/images/extensions/65/203065/1.2.4.1-rev2/images/0cded3a3276425911d55a2552bf361bf/7852aa99f857cd72012843b4cce5090f.jpg',
 
           version: '1.8*',
           desc: "Langage de programmation, dynamise l'application"
