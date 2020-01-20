@@ -1,18 +1,19 @@
 <template lang="pug">
-div.sticky.inset-x-0
-  nav.flex.items-center.justify-start.bg-purple-600(class='')
+div.sticky.inset-x-0.top-0
+  nav.flex.flex-wrap.items-center.justify-start.bg-purple-600(class='')
+    .flex.justify
     .flex.items-center.flex-shrink-0.text-white.mr-3(class='')
       nuxt-link.brand.flex.btn.items-center(to='/')
         img(src='@/assets/favicon-32.png')
-        h2.ml-2.font-semibold.text-xl.tracking-tight.uppercase fabezio.org
+        div.text-2xl.ml-2.font-semibold.text-xl.tracking-tight.uppercase fabezio.org
 
-    .block(class='lg:hidden')
+    .block(class='justify-end lg:hidden')
       button.flex.items-center.px-3.py-2.mr-3.border.rounded.text-teal-200.border-teal-400(@click="navbarToggle" aria-target='#links' class='hover:text-white hover:border-white')
         svg.fill-current.h-3.w-3(viewBox='0 0 20 20', xmlns='http://www.w3.org/2000/svg')
           title Menu
           path(d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z')
 
-    #links.flex.text-center.w-full.block( class='navCollapse ? "block" : "hidden"' class=' md:items-center md:w-auto')
+    #links.flex.flex-col.text-center.w-full.block( :class='navCollapse ? "block" : "hidden"' class='md:items-center md:w-auto')
       div(v-for='(link, i) in navbarLinks', :key='i')
         nuxt-link(class='text-2xl' :to='link.route' :title='link.name')
           button.btn.block.indigo(class='inline-block md:mt-0 hover:text-white')
