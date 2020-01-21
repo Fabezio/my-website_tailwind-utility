@@ -83,7 +83,6 @@ body {
 
 p {
   text-align: justify;
-  text-indent: 1rem;
 }
 p:first-letter {
   font-size: 17px;
@@ -95,11 +94,10 @@ p:first-letter {
   @apply text-red-300;
 }
 .nuxt-link-exact-active:not(.brand) button {
-  @apply underline;
   @apply bg-purple-300;
   @apply py-3;
 }
 /*
-E cas de nouveaux styles
+En cas de nouveaux styles
 */
 </style>
