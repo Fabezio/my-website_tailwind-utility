@@ -1,14 +1,14 @@
 <template lang="pug">
   div
-    h1.text-center.mb-4.header-shadow Portfolio
+    h1.text-center.mb-4 Portfolio
     h2.text-center.mb-3 Sites créés en formation:
-    .flex.mb-4.flex-wrap
+    .flex.mb-4.flex-wrap.z-0
       div(v-for='(creation, i) in portfolio', :key='i')
         .text-center()
           nuxt-link(
             :to='{name: "portfolio-mod", params: {mod: creation.mod} }')
             div.thumbnail.flex.items-center.bg-blue-200.m-2.py-3.px-2.rounded
-              img.banner(aspect-ratio='1.6' data-toggle='modal', :data-target="`#${ creation.mod}`", :src='creation.banner', :alt='creation.alt')
+              img.z-10(aspect-ratio='1.6' data-toggle='modal', :data-target="`#${ creation.mod}`", :src='creation.banner', :alt='creation.alt')
           button.btn.btn-purple.text-white.mb-4
             a(:href='`https://${creation.url}`' target='_blank') Aller
 
@@ -18,6 +18,7 @@
 // import portfolio from './portfolio'
 export default {
   name: '',
+  layout: 'skills',
   components: {
     // portfolio
   },
@@ -57,14 +58,13 @@ export default {
   height: 240px;
   border: 1px solid skyblue;
 }
-.banner {
-  filter: grayscale(100%);
-  opacity: 0.75;
-
+img {
+  filter: blur(1px);
+  opacity: 0.8;
   cursor: pointer;
 }
-.banner:hover {
-  filter: grayscale(0%);
+img:hover {
+  filter: blur(0px);
   opacity: 1;
 }
 .visit-button {

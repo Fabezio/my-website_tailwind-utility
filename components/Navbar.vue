@@ -1,25 +1,18 @@
 <template lang="pug">
-div.sticky.inset-x-0.top-0
-  nav.flex.flex-wrap.items-center.justify-start.bg-purple-600(class='')
-    .flex.justify
-    .flex.items-center.flex-shrink-0.text-white.mr-3(class='')
+div.sticky.inset-x-0.top-0.z-0
+  nav.flex.items-center.justify-between.flex-wrap.p-3.bg-purple-600(class='flex-wrap')
+    .flex.items-center.flex-shrink-0.text-white(class='xl:flex-row xl:flex-wrap')
       nuxt-link.brand.flex.btn.items-center(to='/')
         img(src='@/assets/favicon-32.png')
-        div.text-2xl.ml-2.font-semibold.text-xl.tracking-tight.uppercase fabezio.org
+        .text-3xl.ml-1.font-semibold.tracking-tight.uppercase fabezio.org
 
-    .block(class='justify-end lg:hidden')
-      button.flex.items-center.px-3.py-2.mr-3.border.rounded.text-teal-200.border-teal-400(@click="navbarToggle" aria-target='#links' class='hover:text-white hover:border-white')
-        svg.fill-current.h-3.w-3(viewBox='0 0 20 20', xmlns='http://www.w3.org/2000/svg')
-          title Menu
-          path(d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z')
-
-    #links.flex.flex-col.text-center.w-full.block( :class='navCollapse ? "block" : "hidden"' class='md:items-center md:w-auto')
+    .flex.flex-row.justify-around.text-center.w-full( class='flex-row xl:items-center xl:w-auto xl:inline xl:flex-wrap')
       div(v-for='(link, i) in navbarLinks', :key='i')
-        nuxt-link(class='text-2xl' :to='link.route' :title='link.name')
-          button.btn.block.indigo(class='inline-block md:mt-0 hover:text-white')
+        nuxt-link(class='' :to='link.route' :title='link.name')
+          button.btn.block.indigo(class='inline-block xl:mt-0 hover:text-white')
             span(:class='link.icon')
             span(
-              class='ml-2').uppercase {{link.name }}
+              class='ml-2 hidden xl:block').uppercase {{ link.name }}
 
     //.navbar-end
       .navbar-item
@@ -40,8 +33,6 @@ export default {
   },
   data() {
     return {
-      visible: false,
-      navCollapse: false,
       dropdown: false,
       // signUser: true,
       // logUser: false,
@@ -55,9 +46,6 @@ export default {
     })
   },
   methods: {
-    navbarToggle() {
-      this.navCollapse = !this.navCollapse
-    },
     toggleSignUser() {
       this.signUser = !this.signUser
     },

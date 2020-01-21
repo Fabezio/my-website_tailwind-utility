@@ -1,10 +1,11 @@
 <template lang="pug">
   div
-    .max-w-sm.w-full.border(class='lg:max-w-full lg:flex')
-      img.w-auto.h-48.rounded-l(src='@/assets/img/me.jpg')
+    .w-screen.border(class='lg:max-w-full lg:flex')
+      img.w-auto.rounded(class='hidden lg:block ' src='@/assets/img/me.jpg')
       .bg-white.rounded-b.p-4.flex.flex-col.justify-around.leading-normal(class='lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r')
-        h1.mb-3.text-left fabezio.org
-        h2 Développeur Web FrontEnd spécialisé JS
+        div.flex(class='flex-col')
+          h1.mb-3.text-left() fabezio.org
+          h2 Développeur Web FrontEnd spécialisé JS
 
     div.py-auto
       h2.p-5.text-center Bienvenue sur ce site!
@@ -12,10 +13,10 @@
       p Si vous êtes ici, c'est que vous avez besoin d'un développeur web, en freelance ou contrat interne. J'ai envie de vous dire que vous êtes au bon endroit; néanmoins vous émettez certainement des réserves et avez besoin de preuves de mes compétences. C'est pourquoi tout est décrit ici.
       p Je vous invite donc à prendre le temps de visiter ce site et consulter
         span &nbsp;
-        a(href='https://github.com/Fabezio/fabezio_nuxt', target='_blank') ma page github
+        a.text-purple-600(href='https://github.com/Fabezio/fabezio_nuxt', target='_blank') ma page github
         | , afin de vous forger votre propre avis. N'hésitez pas à tester plus avant mes acquis, me faire un retour
         span &nbsp;
-        a(href='mailto:fabezio@outlook.fr') par mail
+        a.text-purple-600(href='mailto:fabezio@outlook.fr') par mail
         span &nbsp;
         | et/ou émettre des suggestions (c'est grâce aux erreurs qu'on apprend et progresse).
       p Sur ce, je vous souhaite une bonne visite!
@@ -51,6 +52,10 @@ export default {
 <style scoped>
 a {
   color: green;
+}
+img {
+  width: 200px;
+  height: 200px;
 }
 .id-photo {
   border-radius: 3px;

@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   Navbar.top-0.fixed
-  MoreInfo.top-1.w-screen.fixed
+  MoreInfo
   // Clock
   nuxt.container.my-20
   Footer.mt-5.pt-5

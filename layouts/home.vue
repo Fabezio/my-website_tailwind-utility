@@ -1,10 +1,9 @@
 <template lang="pug">
 div
-  div.fixed.top-0.w-screen
-    Navbar.fixed.top-0
-    MoreInfo.fixed.top-1.w-screen
-    nuxt.pt-3.mt-5.container.h-screen
-    Footer.mt-5.pt-5
+  Navbar.fixed.top-0
+  MoreInfo.fixed.top-1.w-screen
+  nuxt.pt-3.mt-5.container.h-screen
+  Footer.fixed.inset-x-0.bottom-0.mt-5.pt-5
 
 </template>
 
