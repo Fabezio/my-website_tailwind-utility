@@ -2,8 +2,8 @@
 div
   Navbar.fixed.top-0
   MoreInfo.fixed.top-1.w-screen
-  nuxt.pt-3.mt-5.container.h-screen
-  Footer.fixed.inset-x-0.bottom-0.mt-5.pt-5
+  nuxt.z-50.pt-3.mt-5.container.h-screen
+  Footer.fixed.inset-x-0.bottom-0.mt-5.pt-3
 
 </template>
 

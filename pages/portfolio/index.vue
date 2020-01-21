@@ -1,16 +1,14 @@
 <template lang="pug">
-  div
-    h1.text-center.mb-4 Portfolio
-    h2.text-center.mb-3 Sites créés en formation:
-    .flex.mb-4.flex-wrap.z-0
-      div(v-for='(creation, i) in portfolio', :key='i')
-        .text-center()
-          nuxt-link(
-            :to='{name: "portfolio-mod", params: {mod: creation.mod} }')
-            div.thumbnail.flex.items-center.bg-blue-200.m-2.py-3.px-2.rounded
-              img.z-10(aspect-ratio='1.6' data-toggle='modal', :data-target="`#${ creation.mod}`", :src='creation.banner', :alt='creation.alt')
-          button.btn.btn-purple.text-white.mb-4
-            a(:href='`https://${creation.url}`' target='_blank') Aller
+div
+  h1.text-center.mb-4 Portfolio
+  h2.text-center.mb-3 Sites créés en formation:
+  .flex.mb-4.flex-wrap.justify-center
+    div.text-center(v-for='(creation, i) in portfolio', :key='i')
+      nuxt-link(:to='{name: "portfolio-mod", params: {mod: creation.mod} }')
+        div.thumbnail.flex.justify-start.bg-blue-200.m-2.py-3.px-2.rounded.shadow
+          img.flex.z-0( :src='creation.banner', :alt='creation.alt')
+      button.btn.btn-purple.text-white.mb-4
+        a(:href='`https://${creation.url}`' target='_blank') Aller
 
 </template>
 
@@ -19,6 +17,7 @@
 export default {
   name: '',
   layout: 'skills',
+  /*
   components: {
     // portfolio
   },
@@ -29,6 +28,7 @@ export default {
       path: '~/assets/img/portfolio'
     }
   },
+*/
   computed: {
     portfolio() {
       return this.$store.state.portfolio.portfolio
@@ -60,25 +60,9 @@ export default {
 }
 img {
   filter: blur(1px);
-  opacity: 0.8;
   cursor: pointer;
 }
 img:hover {
   filter: blur(0px);
-  opacity: 1;
-}
-.visit-button {
-  /* position: relative; */
-  /* bottom: 62px; */
-  /* color: darkslategray; */
-  text-decoration: underline #1e88e5;
-}
-.visit-button:hover {
-  color: whitesmoke;
-  text-decoration: underline whitesmoke 1px;
-  /* color: black; */
-}
-.card-body {
-  border-top: aquamarine 1.5px solid;
 }
 </style>

@@ -4,7 +4,7 @@ div.sticky.inset-x-0.top-0
     .flex.items-center.flex-shrink-0.text-gray-500.mr-6
       nuxt-link.brand.flex.btn.items-center(to='/')
         img(src='@/assets/favicon-32.png')
-        div.text-4xl.ml-1.font-semibold.tracking-tight fabezio.org
+        div.text-xl.ml-1.font-semibold.tracking-tight fabezio.org
     .block(class='md:hidden')
       button.flex.items-center.px-3.py-2.border.rounded.text-teal-200.border-teal-400(@click="navbarToggle" aria-target='#links' class='hover:text-white hover:border-white')
         svg.fill-current.h-3.w-3(viewBox='0 0 20 20', xmlns='http://www.w3.org/2000/svg')
