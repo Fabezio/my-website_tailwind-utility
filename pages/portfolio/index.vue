@@ -4,11 +4,11 @@ div
   h2.text-center.mb-3 Sites créés en formation:
   .flex.mb-4.flex-wrap.justify-center
     div.text-center(v-for='(creation, i) in portfolio', :key='i')
-      nuxt-link(:to='{name: "portfolio-mod", params: {mod: creation.mod} }')
-        div.thumbnail.flex.justify-start.bg-blue-200.m-2.py-3.px-2.rounded.shadow
-          img.flex.z-0( :src='creation.banner', :alt='creation.alt')
-      button.btn.btn-purple.text-white.mb-4
-        a(:href='`https://${creation.url}`' target='_blank') Aller
+      nuxt-link( :to='{name: "portfolio-mod", params: {mod: creation.mod} }')
+        div.flex.justify-start.bg-blue-200.m-2.p-2.rounded.shadow(class='hover:bg-blue-300')
+          img.thumbnail(class='' :src='creation.banner', :alt='creation.alt')
+      button.btn.btn-purple.text-white.mb-4(class="hover:bg-purple-400")
+        a(:href='`https://${creation.url}`' target='_blank' ) Aller
 
 </template>
 
@@ -54,15 +54,7 @@ export default {
 
 <style scoped>
 .thumbnail {
-  width: 320px;
-  height: 240px;
-  border: 1px solid skyblue;
-}
-img {
-  filter: blur(1px);
-  cursor: pointer;
-}
-img:hover {
-  filter: blur(0px);
+  width: 240px;
+  height: 180px;
 }
 </style>
