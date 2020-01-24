@@ -1,19 +1,26 @@
 <template lang="pug">
 div
-  .flex.justify-between
-    VerticalBar.bg-purple-600
-      Navbar.top-0.fixed
-    nuxt.container.my-20
-    VerticalBar
-      Clock
-      MoreInfo
-  Footer.absolute.bottom-0.mt-5.pt-5.z-10
+  Navbar.top-0.fixed
+  MoreInfo
+  // Clock
+  nuxt.container.my-20
+  Footer.fixed.bottom-0.mt-5.pt-5
 
 </template>
 
 <script>
 // import pdf from 'vue-pdf';
+import Navbar from '@/components/Navbar'
+import Clock from '@/components/Clock'
+import Footer from '@/components/Footer'
+import MoreInfo from '@/components/MoreInfo'
 export default {
+  components: {
+    Navbar,
+    Clock,
+    MoreInfo,
+    Footer
+  },
   data() {
     return {}
   },

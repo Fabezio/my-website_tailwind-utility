@@ -27,7 +27,7 @@
 // import Logo from '~/components/Logo.vue'
 
 export default {
-  layout: '',
+  layout: 'home',
   components: {
     // Logo
   },
