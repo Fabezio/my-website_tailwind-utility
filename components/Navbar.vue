@@ -14,7 +14,7 @@ div.sticky.inset-x-0.top-0
 
     #links.flex-col.w-full.flex-grow.text-center.block( :class='navCollapse ? "block" : "hidden"' class='lg:flex-row lg:items-center lg:w-auto lg:flex lg:justify-start')
       div(v-for='(link, i) in navbarLinks', :key='i')
-        nuxt-link( :to='link.route' :title='link.name')
+        nuxt-link( :to='link.route' :title='link.name' @click='!navbarToggle')
           button.btn.block.indigo(class='inline-block lg:mt-0 hover:text-white hover:indigo')
             span(:class='link.icon')
             span(
