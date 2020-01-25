@@ -1,10 +1,10 @@
 <template lang="pug">
-div.min-h-screen
+div
   Navbar.top-0.fixed
   MoreInfo
   // Clock
   nuxt.container.my-20
-  Footer.bottom-0.mt-5.pt-5
+  Footer.absolute.mt-5.pt-5
 
 </template>
 
@@ -84,9 +84,11 @@ body {
 p {
   text-align: justify;
 }
+/*
 p:first-letter {
   font-size: 17px;
 }
+*/
 .indigo {
   color: indigo !important;
 }

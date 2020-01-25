@@ -1,5 +1,5 @@
 <template lang="pug">
-  footer.relative.bottom-0.bg-purple-600.p-1.text-white.inset-x-0.border-t.border-purple-700
+  footer.bottom-0.bg-purple-600.p-1.text-white.inset-x-0.border-t.border-purple-700
     nav.flex.items-center.justify-center.flex-wrap.pb-3
       //.flex.items-center.flex-shrink-0.text-white.mr-6
 

@@ -6,7 +6,7 @@ div
     div.text-center(v-for='(creation, i) in portfolio', :key='i')
       nuxt-link( :to='{name: "portfolio-mod", params: {mod: creation.mod} }')
         div.flex.justify-start.bg-blue-200.m-2.p-2.rounded.shadow(class='hover:bg-blue-300')
-          img.thumbnail(class='' :src='creation.banner', :alt='creation.alt')
+          img.thumbnail.w-full(class='' :src='creation.banner', :alt='creation.alt')
       button.btn.btn-purple.text-white.mb-4(class="hover:bg-purple-400")
         a(:href='`https://${creation.url}`' target='_blank' ) Aller
 
@@ -54,7 +54,7 @@ export default {
 
 <style scoped>
 .thumbnail {
-  width: 240px;
-  height: 180px;
+  width: 320px;
+  height: 240px;
 }
 </style>

@@ -13,6 +13,7 @@
       p Si vous êtes ici, c'est que vous avez besoin d'un développeur web, en freelance ou contrat interne. J'ai envie de vous dire que vous êtes au bon endroit; néanmoins vous émettez certainement des réserves et avez besoin de preuves de mes compétences. C'est pourquoi tout est décrit ici.
       p Je vous invite donc à prendre le temps de visiter ce site et consulter
         |
+        |
         a.text-purple-600(href='https://github.com/Fabezio/fabezio_nuxt', target='_blank') ma page github
         | , afin de vous forger votre propre avis. N'hésitez pas à tester plus avant mes acquis, me faire un retour
         |

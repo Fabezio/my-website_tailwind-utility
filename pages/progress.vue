@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   h1.text-center Page de progression
-  p Ce site est en perpetuelle évolution; voici ce qu'il est prévu:
+  p Ce site est en perpetuelle évolution; voici ce qu'il reste à faire:
   ul
     li adaptation responsive
     li dynamisation
