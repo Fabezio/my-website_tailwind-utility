@@ -9,7 +9,7 @@
 
     div.my-auto
       h2.p-5.text-center Bienvenue sur ce site!
-      main.mx-2(class="md:mx-0")
+      main.mx-2(class="lg:mx-0")
 
         p Si vous êtes ici, c'est que vous avez besoin d'un développeur web, en freelance ou contrat interne. J'ai envie de vous dire que vous êtes au bon endroit; néanmoins vous émettez certainement des réserves et avez besoin de preuves de mes compétences. C'est pourquoi tout est décrit ici.
         p Je vous invite donc à prendre le temps de visiter ce site et consulter

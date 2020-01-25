@@ -46,7 +46,7 @@
 
 <script>
 export default {
-  layout: '',
+  layout: 'landscape',
   data: () => ({
     selected: null,
     gender: [],

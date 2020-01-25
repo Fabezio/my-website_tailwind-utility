@@ -4,7 +4,7 @@ div
   MoreInfo
   // Clock
   nuxt.container(class="md:my-20")
-  Footer.mt-5.pt-5(class="md:absolute md:bottom-0")
+  Footer.mt-5.pt-5(class="lg lg:bottom-0")
 
 </template>
 

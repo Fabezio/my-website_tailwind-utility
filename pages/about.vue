@@ -1,7 +1,7 @@
 <template lang="pug">
   div#author(class='')
     h1.title.text-center Qui je suis
-    article.text-justified.mx-2(class="md:mx-0")
+    article.text-justified.mx-2(class="lg:mx-0")
       p Je suis Fabezio, développeur Web orienté Javascript, plus exactement un codeur Javascript orienté web, spécialisé vueJS / nuxtJS.
       h2.subtitle.text-center.mt-4 Un peu d'histoire
       p J'ai débuté dans la vie active comme technicien en télécommunications dans le privé. Le secteur étant rapidement bouché, j'ai dû m'orienter vers une branche sans rapport avec ma formation initiale, mais où le travail ne manquait pas. J'officiais de nuit dans la sécurité, en statu quo durant de longues années, me demandant si j'étais encore apte à un travail constructif et plaisant.
@@ -31,6 +31,7 @@
 <script>
 export default {
   name: 'About',
+  layout: 'landscape',
   head() {
     return {
       title: 'A propos',
