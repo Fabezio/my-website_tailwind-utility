@@ -1,18 +1,15 @@
 <template lang="pug">
   div
     h1.text-center.pb-5 Formations
-    h2.text-center(v-for='(code, i) in codes', :key='i', :href='`#${code.title}`') {{code.title}}
+    h2.text-center.mt-10(v-for='(code, i) in codes', :key='i', :href='`#${code.title}`') {{code.title}}
       shrink-0.justify-center
         div.border.rounded.m-3.flex.flex-col.flex-grow(class='' v-for='card in code.content', :key='card.name')
           .flex
-
-
-
             img(class='' rounded :src='card.img', alt='', )
             .flex-col.w-full
               h3.text-center {{card.name}}
-              p.light.text-left {{card.desc}}
-              p.text-left version: {{card.version}}
+              p.font-light.text-left {{card.desc}}
+              p.font-light.text-gray-500.text-left version: {{card.version}}
 
 </template>
 

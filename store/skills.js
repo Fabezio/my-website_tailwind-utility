@@ -22,7 +22,7 @@ export const state = () => ({
           img:
             'https://addons-media.operacdn.com/media/CACHE/images/extensions/65/203065/1.2.4.1-rev2/images/0cded3a3276425911d55a2552bf361bf/7852aa99f857cd72012843b4cce5090f.jpg',
 
-          version: '1.8*',
+          version: '1.8, norme ES-9',
           desc: "Langage de programmation, dynamise l'application"
         }
 
@@ -88,7 +88,7 @@ export const state = () => ({
         },
         {
           name: 'Nuxt',
-          version: '2.10',
+          version: '2.11',
           img:
             'https://cosmic-s3.imgix.net/9af92d20-31d0-11e8-b24f-2f60c3c01c65-nuxtjs-cosmicjs.png',
           desc: 'Framework utilisant VueJS pour des applis universelles '
