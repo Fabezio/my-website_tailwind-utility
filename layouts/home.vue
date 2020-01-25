@@ -1,9 +1,9 @@
 <template lang="pug">
-div
+div.min-h-screen
   Navbar.fixed.top-0
-  MoreInfo.fixed.top-1.w-screen
-  nuxt.z-50.pt-3.mt-5.container.h-screen
-  Footer.fixed.inset-x-0.bottom-0.mt-5.pt-3
+  MoreInfo.top-1.
+  nuxt.z-50.container
+  Footer.inset-x-0.mt-5.pt-3
 
 </template>
 

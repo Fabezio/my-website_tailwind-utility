@@ -1,10 +1,10 @@
 <template lang="pug">
-div
+div.min-h-screen
   Navbar.top-0.fixed
   MoreInfo
   // Clock
   nuxt.container.my-20
-  Footer.fixed.bottom-0.mt-5.pt-5
+  Footer.bottom-0.mt-5.pt-5
 
 </template>
 
@@ -93,9 +93,16 @@ p:first-letter {
 .indigo:active {
   @apply text-red-300;
 }
+.indigo:hover {
+  @apply bg-purple-300;
+  @apply opacity-75;
+  @apply rounded-full;
+  @apply w-full;
+}
 .nuxt-link-exact-active:not(.brand) button {
   @apply bg-purple-300;
   @apply py-3;
+  @apply w-full;
 }
 /*
 En cas de nouveaux styles
