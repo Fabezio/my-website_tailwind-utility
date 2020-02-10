@@ -3,7 +3,7 @@ div.min-h-screen
   Navbar.fixed.top-0
   MoreInfo.top-1.
   nuxt.z-50.container
-  Footer.inset-x-0.mt-5.pt-3(class="md:absolute md:bottom-0")
+  Footer.inset-x-0.mt-5.pt-3.absolute.bottom-0(class="md:absolute md:bottom-0")
 
 </template>
 

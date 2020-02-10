@@ -3,7 +3,8 @@ div.min-h-screen
   Navbar.fixed.top-0
   MoreInfo.top-1.
   nuxt.container(class='md:py-20')
-  Footer(class="md:fixed md:bottom-0").inset-x-0.mt-5.pt-3
+  Footer
+  //(class="md:absolute md:bottom-0").inset-x-0.mt-5.pt-3
 
 </template>
 
@@ -21,4 +22,4 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped></style>
