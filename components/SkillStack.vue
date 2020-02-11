@@ -1,23 +1,17 @@
 <template v-slot:activator="{ on }" lang="pug">
-div
-  ul.flex
+div.mx-auto(class="lg:w-2/3")
+  //ul.flex
     li.mr-6(v-for='(code, i) in codes', :key='i')
       a.text-blue-500(class='hover:text-blue-800', v-on='on' :href='`#${code.title}`') {{code.title}}
-    //li.mr-6
-      a.text-blue-500(class='hover:text-blue-800', href='#') Link
-    //li.mr-6
-      a.text-blue-500(class='hover:text-blue-800', href='#') Link
-    //li.mr-6
-      a.text-gray-400.cursor-not-allowed(href='#') Disabled
 
-  div(v-for='(code,i) in codes', :key='i' )
+  h2.font-light(v-for='(code,i) in codes', :key='i' ) {{code.title}}
     .main.border.rounded.m-3.flex.flex-col.flex-grow(:id='code.title' :class='card.name === !code.title.name  ? "hidden" : "block"' v-for='card in code.content', :key='card.name')
       .flex()
         img(class='block' rounded :src='card.img', alt='', )
         .flex-col.w-full.mx-2
-          h3.text-center {{card.name}}
+          h3 {{card.name}}
           p.font-light.text-left {{card.desc}}
-          p.font-light.text-gray-500.text-left version: {{card.version}}
+          p.version.font-light.text-gray-500.text-left version: {{card.version}}
 
 </template>
 
