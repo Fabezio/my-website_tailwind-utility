@@ -128,9 +128,10 @@ export const state = () => ({
         },
         {
           name: 'GitHub',
-          img: 'http://pngimg.com/uploads/github/github_PNG40.png',
+          img:
+            'https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/GITHUB-512.png',
           version: 2.23,
-          desc: 'Le cloud des codeurs, basé sur git'
+          desc: 'Un cloud pour les codeurs, basé sur git'
         },
         {
           name: 'Python',

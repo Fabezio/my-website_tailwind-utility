@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     .w-screen.border(class='lg:max-w-full lg:flex')
-      img.w-auto.rounded(class='hidden lg:block ' src='@/assets/img/me.jpg')
+      img.w-auto.rounded(class='hidden lg:block ' src='/img/me.jpg')
       .bg-white.rounded-b.p-4.flex.flex-col.justify-around.leading-normal(class='lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r')
         div.flex(class='flex-col' )
           h1.mb-3.text-left.text-center(class='lg:text-left') fabezio.org
