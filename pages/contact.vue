@@ -2,42 +2,46 @@
   .mx-auto.pa-3(class='md:w-4/12')
     h1.pb-6.text-center Contactez-moi
 
-    a(href='mailto:fabezio@outlook.fr')
+    //a(href='mailto:fabezio@outlook.fr')
       button.btn.btn-purple.text-white.mx-auto.block Envoyer un message
 
-    //form(v-model="valid" @submit.prepend)
-      .flex.items-center
-        select.border.bg-white.outlined.rounded.h-12(class='w-7/12' v-model='gender' value='Etat civil' required)
-          option(disabled='', value='') Choisissez
-          option Monsieur
-          option Madame
-          option Mademoiselle
-        input#lastname.outlined.border.rounded.h-12.p-3.mx-3(class='w-full' placeholder='Nom de famille:' prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='text', label='Nom', v-model.trim='lastname ')
-        input#firstname.outlined.border.rounded.h-12.p-3(class='w-full' placeholder='Prénom' prepend-icon='mdi-account', :append-icon="firstname ? 'mdi-check' : ''", rounded, type='text', label='Prénom', v-model.trim='firstname')
+    form(v-model="valid" @submit.prevent)
+      .flex.center-items
+        select.input-icons.select.bg-white.h-10(class='w-3/12' v-model='gender' value='Etat civil' required)
+          option(disabled='', value='') Titre
+          option M.
+          option Mme
+          option Melle
+        .input-icons.mx-3
+          FormInputIcon(icon='fas fa-user' )
+          FormInputField.w-full(label="Prénom" v-model='firstname' type='text')
+        .input-icons.border.rounded
+          FormInputIcon(icon='fas fa-users' )
+          FormInputField.w-full(label="Nom" v-model='lastname' type='text')
 
-      p {{ gender }} {{ lastname }} {{ firstname }}
+      // p {{ gender }} {{ lastname }} {{ firstname }}
 
-      div.flex.my-4
+      //div.flex.my-4
+      .input-icons.border.rounded
+        FormInputIcon(icon='fas fa-user-tie' )
+        FormInputField.w-full(label="Raison Sociale" v-model='society' type='text')
+      .input-icons.border.rounded
+        FormInputIcon(icon='fas fa-at' )
+        FormInputField.w-full(label="Email" v-model='email' type='email')
+      .input-icons.border.rounded
+        FormInputIcon(icon='fas fa-phone' )
+        FormInputField.w-full(label="Téléphone" v-model='phone' type='number')
 
-      div.flex.my-4
-        input#society.outlined.border.rounded.h-12.p-3(class='w-9/12' placeholder='Raison sociale' prepend-icon='mdi-office-building' :append-icon="society ? 'mdi-check' : ''", type='text', rounded, label='Entreprise', v-model='society')
-        p(class='w-3/12') {{society}}
-      div.flex.my-4
-        input#email.outlined.border.rounded.h-12.p-3(class='w-9/12' placeholder='Email' prepend-icon='mdi-at' type='email', :append-icon="email ? 'mdi-check' : ''", label='Email', rounded, v-model='email')
-        p(class='w-3/12') {{email}}
-      div.flex.my-4
-        input#phone.outlined.border.rounded.h-12.p-3(class='w-9/12' placeholder='Téléphone' prepend-icon='mdi-phone' type='text', :append-icon="phone ? 'mdi-check' : ''", label='Tél.', rounded, v-model.trim.number='phone')
-        p(class='w-3/12') {{phone}}
+      .input-icons.border.rounded
+        FormInputIcon(icon='fas fa-envelope' )
+        FormInputField.w-full(label="Titre du message" v-model='message' type='text')
 
-      div.flex.my-4
-        input#title.outlined.border.rounded.h-12.p-3(class='w-9/12' placeholder='Titre du message' prepend-icon='mdi-phone' type='phone', :append-icon="phone ? 'mdi-check' : ''", label='Tél.', rounded, v-model='title')
-        p(class='w-3/12') {{title}}
-      div.flex.my-4
-        textarea#message.outlined.border.rounded.p-3(class='w-9/12' placeholder='Votre message' prepend-icon='mdi-keyboard' type='text', :append-icon="message ? 'mdi-check' : ''", label='Message', rounded, rows='3', v-model='message' required)
+      textarea.outlined.border.rounded.p-3(class='w-9/12' placeholder='Votre message' prepend-icon='mdi-keyboard' type='text', :append-icon="message ? 'mdi-check' : ''", label='Message', rounded, rows='3', v-model='message' required)
         p(class='w-3/12') {{message}}
-      div.flex.my-4.items-center
-        input#checkbox.mr-2(prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='checkbox', v-model='checkbox' )
+      .flex.my-4.items-center
+        input.checkbox.mr-2(prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='checkbox', v-model='checkbox' )
         label(v-model="checkbox" label="") Je certifie que toutes les informations fournies ci-dessus sont exactes
+
       div#submit.flex
         input.btn.btn-blue.mr-2(type='submit' href='mailto:fabezio@outlook.fr' value='Envoyer')
         button.btn.btn-warning(color="info") Annuler
@@ -45,8 +49,14 @@
 </template>
 
 <script>
+import FormInputIcon from '@/components/FormInputIcon.vue'
+import FormInputField from '@/components/FormInputField.vue'
 export default {
-  layout: '',
+  components: {
+    FormInputIcon,
+    FormInputField
+  },
+  layout: 'landscape',
   data: () => ({
     selected: null,
     gender: [],
@@ -88,3 +98,23 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.input-icons {
+  border: thin solid black;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  height: 42px;
+}
+textarea {
+  border: thin solid black;
+  border-radius: 5px;
+  width: 100%;
+}
+.checkbox {
+  border: thin solid black;
+  border-radius: 5px;
+  width: 1rem;
+  height: 1rem;
+}
+</style>

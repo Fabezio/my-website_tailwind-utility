@@ -1,10 +1,10 @@
 <template lang="pug">
-div
+.page
   Navbar.top-0.fixed
   MoreInfo
   // Clock
   nuxt.container(class="md:my-20")
-  Footer.mt-5.pt-5(class="lg:absolute lg:bottom-0")
+  Footer.mt-5.pt-5(class="lg lg:bottom-0")
 
 </template>
 
@@ -79,6 +79,9 @@ body {
   font-family: sans-serif;
   margin-top: 0;
   background: white !important;
+}
+.page {
+  min-height: 100vh;
 }
 
 p {
