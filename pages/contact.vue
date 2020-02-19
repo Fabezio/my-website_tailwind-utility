@@ -7,7 +7,7 @@
 
     form(v-model="valid" @submit.prevent)
       .flex.center-items
-        select.input-icons.select.bg-white.h-10(class='w-3/12' v-model='gender' value='Etat civil' required)
+        select.input-icons.bg-white.h-10(class='w-3/12' v-model='gender' value='Etat civil' required)
           option(disabled='', value='') Titre
           option M.
           option Mme
@@ -101,19 +101,16 @@ export default {
 
 <style scoped>
 .input-icons {
-  border: thin solid black;
-  border-radius: 5px;
+  border-bottom: 1px solid black;
   margin-bottom: 16px;
   height: 42px;
 }
 textarea {
-  border: thin solid black;
-  border-radius: 5px;
+  border-bottom: 1px solid black;
   width: 100%;
 }
 .checkbox {
   border: thin solid black;
-  border-radius: 5px;
   width: 1rem;
   height: 1rem;
 }

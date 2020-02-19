@@ -20,7 +20,7 @@ export default {
 <style scoped>
 .input-field {
   padding-left: 36px;
-
+  border: 0;
   text-align: left;
 }
 </style>

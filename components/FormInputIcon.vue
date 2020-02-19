@@ -20,11 +20,9 @@ export default {
   position: absolute;
 }
 .icon {
-  padding: 12px 12px;
-  background: silver;
+  padding: 12px 0px;
   color: #575757;
   min-width: 2rem;
   text-align: center;
-  border-right: solid #777 1px;
 }
 </style>
