@@ -27,7 +27,10 @@
         FormInputField.w-full(label="Raison Sociale" v-model='society' type='text')
       .input-icons.border.rounded
         FormInputIcon(icon='fas fa-at' )
-        FormInputField.w-full(label="Email" v-model='email' type='email')
+        FormInputField.w-full(label="Email" v-model='email' type='email' @blur='$v.email.$touch()' :class='{error: $v.email.$error}')
+        div(v-if='$v.email.$error')
+          p.errorMessage(v-if='!$v.email.email') Entrez un email vallde
+          p.errorMessage(v-if='!$v.email.required') l'email est obligatoire
       .input-icons.border.rounded
         FormInputIcon(icon='fas fa-phone' )
         FormInputField.w-full(label="Téléphone" v-model='phone' type='number')
@@ -49,6 +52,7 @@
 </template>
 
 <script>
+import { required, email } from 'vuelidate/lib/validators'
 import FormInputIcon from '@/components/FormInputIcon.vue'
 import FormInputField from '@/components/FormInputField.vue'
 export default {
@@ -95,6 +99,9 @@ export default {
         }
       ]
     }
+  },
+  validations: {
+    email: { required, email }
   }
 }
 </script>
