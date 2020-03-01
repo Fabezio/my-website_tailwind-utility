@@ -42,7 +42,6 @@ export default {
 <style lang="stylus">
 .btn {
   @apply font-bold;
-  @apply py-2;
   @apply rounded;
 }
 .btn-blue {
@@ -75,25 +74,18 @@ h3 {
   @apply font-bold;
 }
 
-body {
-  font-family: sans-serif;
-  margin-top: 0;
-  background: white !important;
-}
+body
+	font-family sans-serif
+	margin-top 0
+	background white !important
+p
+	text-align justify
+.indigo
+	color indigo !important
 
-p {
-  text-align: justify;
-}
-/*
-p:first-letter {
-  font-size: 17px;
-}
-*/
-.indigo {
-  color: indigo !important;
-}
 .indigo:active {
   @apply text-red-300;
+  @apply py-2;
 }
 .indigo:hover {
   @apply bg-purple-300;
@@ -103,7 +95,7 @@ p:first-letter {
 }
 .nuxt-link-exact-active:not(.brand) button {
   @apply bg-purple-300;
-  @apply py-3;
+  @apply py-2 !important;
   @apply w-full;
 }
 /*

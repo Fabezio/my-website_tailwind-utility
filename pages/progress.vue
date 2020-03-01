@@ -15,7 +15,6 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-li {
-  list-style: '> ';
-}
+li
+	list-style '> '
 </style>

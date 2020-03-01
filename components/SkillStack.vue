@@ -32,11 +32,9 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-img {
-  width: 100px;
-  height: 100px;
-}
-p {
-  font-size: 20px;
-}
+img
+	width 100px
+	height 100px
+p
+	font-size 20px
 </style>

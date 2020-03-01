@@ -52,12 +52,10 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-img {
-  width: 200px;
-  height: 200px;
-}
-.id-photo {
-  border-radius: 3px;
-  border: black solid 1px;
-}
+img
+	width 200px
+	height 200px
+.id-photo
+	border-radius 3px
+	border black solid 1px
 </style>

@@ -1,6 +1,6 @@
 <template lang="pug">
 div.sticky.inset-x-0.top-0
-  nav.flex.items-center.justify-between.flex-wrap.p-2.bg-purple-600
+  nav.flex.items-center.justify-between.flex-wrap.py-1.bg-purple-600
     .flex.items-center.flex-shrink-0.text-gray-500.mr-6
       nuxt-link.brand.flex.btn.items-center(to='/')
         img(src='@/assets/favicon-32.png')
@@ -79,7 +79,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.brand-icon {
-  margin-right: 0;
-}
+.brand-icon
+	margin-right 0
 </style>

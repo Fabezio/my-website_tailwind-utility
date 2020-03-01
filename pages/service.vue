@@ -44,19 +44,13 @@ export default {
 
 <style lang="stylus" scoped>
 .carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-}
-
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 5px 5px 0 0;
-  /*
-  */
-}
-.carousel-indicators {
-  width: 1rem;
-  height: 1rem;
-}
+.carousel-control-next-icon
+	background rgba(0, 0, 0, 0.5)
+	color white
+.carousel-caption
+	background rgba(0, 0, 0, 0.5)
+	border-radius 5px 5px 0 0
+.carousel-indicators
+	width 1rem
+	height 1rem
 </style>

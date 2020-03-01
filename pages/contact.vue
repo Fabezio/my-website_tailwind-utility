@@ -5,7 +5,7 @@
     a(href='mailto:fabezio@outlook.fr')
       button.btn.btn-purple.text-white.mx-auto.block Envoyer un message
 
-    //form(v-model="valid" @submit.prepend)
+    form(v-model="valid" @submit.prepend)
       .flex.items-center
         select.border.bg-white.outlined.rounded.h-12(class='w-7/12' v-model='gender' value='Etat civil' required)
           option(disabled='', value='') Choisissez
@@ -15,7 +15,7 @@
         input#lastname.outlined.border.rounded.h-12.p-3.mx-3(class='w-full' placeholder='Nom de famille:' prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='text', label='Nom', v-model.trim='lastname ')
         input#firstname.outlined.border.rounded.h-12.p-3(class='w-full' placeholder='Prénom' prepend-icon='mdi-account', :append-icon="firstname ? 'mdi-check' : ''", rounded, type='text', label='Prénom', v-model.trim='firstname')
 
-      p {{ gender }} {{ lastname }} {{ firstname }}
+      //p {{ gender }} {{ lastname }} {{ firstname }}
 
       div.flex.my-4
 
@@ -46,7 +46,7 @@
 
 <script>
 export default {
-  layout: 'landscape',
+  layout: '',
   data: () => ({
     selected: null,
     gender: [],

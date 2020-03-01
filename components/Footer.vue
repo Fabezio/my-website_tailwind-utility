@@ -45,13 +45,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.footertext {
-  text-align: center;
-}
-/*
-  v-footer {
-    margin: 0;
-    padding: 0;
-  }
-*/
+.footertext
+	text-align center
 </style>
