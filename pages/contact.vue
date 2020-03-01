@@ -5,7 +5,7 @@
     a(href='mailto:fabezio@outlook.fr')
       button.btn.btn-purple.text-white.mx-auto.block Envoyer un message
 
-    form(v-model="valid" @submit.prepend)
+    //form(v-model="valid" @submit.prepend)
       .flex.items-center
         select.border.bg-white.outlined.rounded.h-12(class='w-7/12' v-model='gender' value='Etat civil' required)
           option(disabled='', value='') Choisissez
