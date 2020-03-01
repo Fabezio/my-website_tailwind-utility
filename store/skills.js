@@ -64,7 +64,14 @@ export const state = () => ({
           version: '1.x',
           img:
             'https://pic.vsixhub.com/42/e2/6226e0be-5975-4616-948c-545d562adc1d-logo.png',
-          description: 'librairie utilitaire css'
+          desc: 'librairie utilitaire css'
+        },
+        {
+          name: 'Stylus',
+          version: '0.54',
+          img:
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Stylus-logo.svg/393px-Stylus-logo.svg.png',
+          desc: 'préprocesseur css basé sur sass et less'
         }
       ]
     },
@@ -128,9 +135,10 @@ export const state = () => ({
         },
         {
           name: 'GitHub',
-          img: 'http://pngimg.com/uploads/github/github_PNG40.png',
+          img:
+            'https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/GITHUB-512.png',
           version: 2.23,
-          desc: 'Le cloud des codeurs, basé sur git'
+          desc: 'Un cloud pour les codeurs, basé sur git'
         },
         {
           name: 'Python',
@@ -139,6 +147,13 @@ export const state = () => ({
             'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png',
           desc:
             'Langage de programmation, plébiscité en Big Data et Machine Learning'
+        },
+        {
+          name: 'bash',
+          version: '5.0',
+          img:
+            'https://cdn3.brettterpstra.com/uploads/2015/02/terminal-longshadow.png',
+          desc: 'Langage de scripts, largement utilisé sous Linux'
         }
       ]
     }
