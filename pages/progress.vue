@@ -14,7 +14,7 @@ div
 export default {}
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 li {
   list-style: '> ';
 }

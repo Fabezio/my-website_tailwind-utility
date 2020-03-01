@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus">
 .btn {
   @apply font-bold;
   @apply py-2;

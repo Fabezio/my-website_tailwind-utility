@@ -46,7 +46,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style lang="stylus" scoped>
 .far {
   margin-left: -8px !important;
   margin-right: 8px;

@@ -65,13 +65,6 @@ export const state = () => ({
           img:
             'https://pic.vsixhub.com/42/e2/6226e0be-5975-4616-948c-545d562adc1d-logo.png',
           desc: 'librairie utilitaire css'
-        },
-        {
-          name: 'Stylus',
-          version: '0.54',
-          img:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Stylus-logo.svg/393px-Stylus-logo.svg.png',
-          desc: 'préprocesseur css basé sur sass et less'
         }
       ]
     },
@@ -120,6 +113,13 @@ export const state = () => ({
           desc: 'Préprocesseur HTML - anciennement Jade ',
           otherLogo:
             '<img src="https://s3.amazonaws.com/oodles-technologies1/blog-images/d73085c7-ff2c-4edb-9a72-8e1333dac14e.png" width="24px" alt="">'
+        },
+        {
+          name: 'Stylus',
+          version: '0.54',
+          img:
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Stylus-logo.svg/393px-Stylus-logo.svg.png',
+          desc: 'préprocesseur css basé sur sass et less'
         }
       ]
     },

@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 img {
   width: 100px;
   height: 100px;

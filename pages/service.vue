@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background: rgba(0, 0, 0, 0.5);
