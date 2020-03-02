@@ -11,19 +11,8 @@ div
 
 <script>
 // import pdf from 'vue-pdf';
-import Navbar from '@/components/Navbar'
-import SignIn from '@/components/SignIn'
-import Clock from '@/components/Clock'
-import Footer from '@/components/Footer'
-import MoreInfo from '@/components/MoreInfo'
+
 export default {
-  components: {
-    Navbar,
-    SignIn,
-    Clock,
-    MoreInfo,
-    Footer
-  },
   data() {
     return {}
   },

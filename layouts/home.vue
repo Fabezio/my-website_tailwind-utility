@@ -1,7 +1,8 @@
 <template lang="pug">
 div.min-h-screen
   Navbar.fixed.top-0
-  MoreInfo.top-1.
+  MoreInfo.top-1
+  SignIn
   nuxt.z-50.container
   Footer(class="md:absolute md:bottom-0")
 
@@ -9,16 +10,7 @@ div.min-h-screen
 
 <script>
 // import pdf from 'vue-pdf';
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import MoreInfo from '@/components/MoreInfo.vue'
-export default {
-  components: {
-    Navbar,
-    MoreInfo,
-    Footer
-  }
-}
+export default {}
 </script>
 
 <style></style>

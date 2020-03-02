@@ -31,7 +31,7 @@ div
 <script>
 import SkillStack from '@/components/SkillStack'
 export default {
-  layout: 'landscape',
+  layout: 'portrait',
   name: '',
   components: {
     SkillStack
