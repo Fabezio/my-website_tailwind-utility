@@ -183,23 +183,18 @@ export default {
 }
 </script>
 
-<style scoped>
-.editor {
-  font-style: italic;
-}
+<style lang="stylus" scoped>
+.editor
+	font-style italic
 .email,
-.web {
-  text-decoration: underline;
-  color: blue;
-}
-.society {
-  font-weight: bold;
-}
+.web
+	text-decoration underline
+	color blue
+.society
+	font-weight bold
 h2,
-h3 {
-  margin: 2rem 0 1.5rem;
-}
-p {
-  text-indent: 1rem;
-}
+h3
+	margin 2rem 0 1.5rem
+p
+	text-indent 1rem
 </style>

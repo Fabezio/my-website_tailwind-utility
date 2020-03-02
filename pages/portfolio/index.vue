@@ -52,9 +52,8 @@ export default {
 }
 </script>
 
-<style scoped>
-.thumbnail {
-  width: 320px;
-  height: 240px;
-}
+<style lang="stylus" scoped>
+.thumbnail
+	width 320px
+	height 240px
 </style>

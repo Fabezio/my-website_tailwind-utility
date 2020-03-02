@@ -15,7 +15,7 @@
         input#lastname.outlined.border.rounded.h-12.p-3.mx-3(class='w-full' placeholder='Nom de famille:' prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='text', label='Nom', v-model.trim='lastname ')
         input#firstname.outlined.border.rounded.h-12.p-3(class='w-full' placeholder='Prénom' prepend-icon='mdi-account', :append-icon="firstname ? 'mdi-check' : ''", rounded, type='text', label='Prénom', v-model.trim='firstname')
 
-      p {{ gender }} {{ lastname }} {{ firstname }}
+      //p {{ gender }} {{ lastname }} {{ firstname }}
 
       div.flex.my-4
 

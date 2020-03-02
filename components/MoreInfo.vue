@@ -18,8 +18,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.indigo {
-  color: indigo;
-}
-</style>
+<style lang="stylus" scoped></style>
