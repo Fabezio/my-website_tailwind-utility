@@ -31,7 +31,7 @@
 <script>
 export default {
   name: 'About',
-  layout: 'landscape',
+  layout: '',
   head() {
     return {
       title: 'A propos',

@@ -1,6 +1,6 @@
 <template lang="pug">
 div.sticky.inset-x-0.top-0
-  nav.flex.items-center.justify-between.flex-wrap.py-1.pr-3.bg-purple-600
+  nav.flex.items-center.justify-between.flex-wrap.py-1.px-3.bg-purple-600
     .flex.items-center.flex-shrink-0.text-gray-500.mr-6
       nuxt-link.brand.flex.btn.items-center(to='/')
         img(src='@/assets/favicon-32.png')
@@ -16,7 +16,7 @@ div.sticky.inset-x-0.top-0
     #links.flex-col.w-full.flex-grow.text-center.block( :class='navCollapse ? "block" : "hidden"' class='lg:flex-row lg:items-center lg:w-auto lg:flex lg:justify-start')
       div(v-for='(link, i) in navbarLinks', :key='i')
         nuxt-link( :to='link.route' :title='link.name' @click='!navbarToggle')
-          button.btn.block.indigo(class='inline-block lg:mt-0 hover:text-white hover:indigo')
+          button.btn.block.indigo.mx-1(class='inline-block lg:mt-0 hover:text-white hover:indigo')
             span(:class='link.icon')
             span.text-base(
               class='ml-2').uppercase {{link.name }}
@@ -25,7 +25,7 @@ div.sticky.inset-x-0.top-0
       .navbar-item.flex.flex-grow.justify-end
         div(v-for='(link, i) in logs', :key='i')
           //nuxt-link.nav-link.buttons(:to='link.route')
-          button.block.btn.w-full(:class='link.color')
+          button.block.btn.mx-1(:class='link.color')
             span(:class='link.icon')
             //iconstack(:faclass='link.icon')
             //span.ml-1.uppercase.route {{link.title}}
@@ -82,29 +82,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.btn
-  @apply font-bold;
-  @apply rounded;
-.btn span
-  @apply text-base !important
 
-.btn-info
-  @apply bg-blue-500 !important;
-  @apply text-white;
-  &:hover
-    @apply bg-blue-700;
-
-.btn-success
-  @apply bg-green-400  !important;
-  @apply text-white;
-  &:hover
-    @apply bg-green-700 !important;
-
-.btn-warning
-  @apply bg-yellow-500;
-  @apply text-white;
-  &:hover
-    @apply bg-yellow-700;
 .brand-icon
 	margin-right 0
 </style>
