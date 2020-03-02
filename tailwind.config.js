@@ -10,6 +10,7 @@ module.exports = {
       center: true
     },
     fontSize: {
+      base: '16px',
       '5xl': '2.5rem',
       '4xl': '2rem',
       '3xl': '1.75rem',
