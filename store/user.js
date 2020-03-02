@@ -2,7 +2,7 @@ export const state = () => ({
   logs: [
     {
       name: 'subscribe',
-      color: 'btn-blue',
+      color: 'btn-info',
       title: 'Inscription',
       icon: 'fas fa-user-plus',
       show: true
