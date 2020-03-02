@@ -16,7 +16,7 @@ div
 // import portfolio from './portfolio'
 export default {
   name: '',
-  layout: 'landscape',
+  layout: 'portrait',
   /*
   components: {
     // portfolio
