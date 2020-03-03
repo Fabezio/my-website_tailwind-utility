@@ -5,21 +5,21 @@ export const state = () => ({
       color: 'btn-info',
       title: 'Inscription',
       icon: 'fas fa-user-plus',
-      show: true
+      visible: true
     },
     {
       name: 'login',
       color: 'btn-success',
       title: 'Connexion',
       icon: 'fas fa-sign-in-alt',
-      show: true
+      visible: true
     },
     {
       name: 'logout',
       color: 'btn-warning',
       title: 'Déconnexion',
       icon: 'fas fa-sign-out-alt',
-      show: false
+      visible: false
     }
   ]
 })
