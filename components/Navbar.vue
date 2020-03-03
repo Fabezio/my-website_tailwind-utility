@@ -23,12 +23,12 @@ div.sticky.inset-x-0.top-0
 
     .navbar-end(:class='navCollapse ? "block" : "hidden"' class='lg:flex-row lg:items-center lg:w-auto lg:flex lg:justify-start')
       .navbar-item.flex.flex-grow.justify-end
-        div(v-for='(link, i) in logs', :key='i')
-          //nuxt-link.nav-link.buttons(:to='link.route')
-          button.block.btn.mx-1(:class='link.color')
-            span(:class='link.icon')
-            //iconstack(:faclass='link.icon')
-            //span.ml-1.uppercase.route {{link.title}}
+        div(v-for='(key, i) in logs', :key='i')
+          //nuxt-link.nav-link.buttons(:to='key.route')
+          button.block.btn.mx-1(v-show='key.visible' :class='key.color' @click='')
+            span(:class='key.icon')
+            //iconstack(:faclass='key.icon')
+            span.ml-1.uppercase.route {{key.title}}
 
 </template>
 
@@ -53,10 +53,21 @@ export default {
   computed: {
     ...mapState({
       navbarLinks: (state) => state.links.navbarLinks,
-      logs: (state) => state.user.logs
+      logs: (state) => state.logs.logs
     })
   },
   methods: {
+    /*
+    logButtonIsClicked() {
+      this.logs.forEach((i) => {
+        if (this.i !== 2) {
+          this.i.visible = false
+          this.i = 2
+          this.i.visible = true
+        }
+      })
+    },
+    */
     navbarToggle() {
       this.navCollapse = !this.navCollapse
     },
