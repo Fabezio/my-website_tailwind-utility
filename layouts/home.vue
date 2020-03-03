@@ -2,7 +2,7 @@
 div.min-h-screen
   Navbar.fixed.top-0
   MoreInfo.top-1
-  SignIn
+  //SignIn
   nuxt.z-50.container
   Footer(class="md:absolute md:bottom-0")
 
