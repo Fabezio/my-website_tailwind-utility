@@ -2,7 +2,7 @@
 div
   Navbar.top-0.fixed
   MoreInfo
-  SignIn
+  //SignIn
   // Clock
   nuxt.container(class="md:my-20")
   Footer.mt-5.pt-5(class="lg:absolute lg:bottom-0")

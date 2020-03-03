@@ -2,7 +2,7 @@
 div.min-h-screen
   Navbar.fixed.top-0
   MoreInfo.top-1
-  SignIn
+  //SignIn
   nuxt.container(class='md:py-20')
   Footer
   //(class="md:absolute md:bottom-0").inset-x-0.mt-5.pt-3
