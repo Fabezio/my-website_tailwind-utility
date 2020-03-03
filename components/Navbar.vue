@@ -16,14 +16,15 @@ div.sticky.inset-x-0.top-0
     #links.flex-col.w-full.flex-grow.text-center.block( :class='navCollapse ? "block" : "hidden"' class='lg:flex-row lg:items-center lg:w-auto lg:flex lg:justify-start')
       div(v-for='(link, i) in navbarLinks', :key='i')
         nuxt-link( :to='link.route' :title='link.name' @click='!navbarToggle')
-          button.btn.block.indigo.mx-1(class='inline-block lg:mt-0 hover:text-white hover:indigo')
+          button.btn.block.indigo(class='inline-block lg:mt-0 hover:text-white hover:indigo')
             span(:class='link.icon')
             span.text-base(
               class='ml-2').uppercase {{link.name }}
 
     .navbar-end(:class='navCollapse ? "block" : "hidden"' class='lg:flex-row lg:items-center lg:w-auto lg:flex lg:justify-start')
       .navbar-item.flex.flex-grow.justify-end
-        div(v-for='(key, i) in logs', :key='i')
+        Sign
+        //div(v-for='(key, i) in logs', :key='i')
           //nuxt-link.nav-link.buttons(:to='key.route')
           button.block.btn.mx-1(v-show='key.visible' :class='key.color' @click='')
             span(:class='key.icon')
@@ -93,6 +94,11 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.btn
+  @apply text-purple-900;
+
+.btn span
+  @apply text-base !important
 
 .brand-icon
 	margin-right 0
