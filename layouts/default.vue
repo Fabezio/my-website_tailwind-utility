@@ -34,31 +34,14 @@ export default {
 <style lang="stylus">
 .btn
   @apply rounded
-  @apply p-1 !important
-  @apply mx-1 !important
-  @apply font-bold !important;
+  @apply p-2
+  @apply mx-1
+  @apply font-bold
+
 .btn span
-  @apply text-base !important
+  @apply text-base
+  @apply mx-1
 
-.btn-info
-.btn-warning
-.btn-success
-  @apply text-white;
-
-.btn-info
-  @apply bg-blue-500 !important;
-  &:hover
-    @apply bg-blue-700;
-
-.btn-success
-  @apply bg-green-400  !important;
-  &:hover
-    @apply bg-green-700 !important;
-
-.btn-warning
-  @apply bg-yellow-500;
-  &:hover
-    @apply bg-yellow-700;
 .btn-purple
   @apply bg-purple-600;
   &hover
@@ -86,16 +69,14 @@ p
 .indigo
 	@apply text-red-700
   @apply rounded-full
-
-.indigo:active
-  @apply text-red-300;
-  @apply py-2;
-
-.indigo:hover
-  @apply rounded-full
-  @apply bg-purple-300;
-  @apply opacity-75;
-  @apply w-full;
+  &active
+    @apply text-red-300;
+    @apply py-3 !important;
+  &:hover
+    @apply rounded-full
+    @apply bg-purple-300;
+    @apply opacity-75;
+    @apply w-full;
 
 .nuxt-link-exact-active:not(.brand) button
   @apply rounded-full !important
@@ -103,7 +84,5 @@ p
   @apply py-1 !important;
   @apply w-full;
 
-/*
-En cas de nouveaux styles
-*/
+// En cas de nouveaux styles
 </style>
