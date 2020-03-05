@@ -1,52 +1,36 @@
 <template lang="pug">
-  .mx-auto.pa-3(class='md:w-4/12')
+  .mx-auto.pa-3(class='md:w-4/12 text-center')
     h1.pb-6.text-center Contactez-moi
 
-    a(href='mailto:fabezio@outlook.fr')
-      button.btn.btn-purple.text-white.mx-auto.block Envoyer un message
+    //a(href='mailto:fabezio@outlook.fr')
+      //ActionButton()
+      ActionButton(color='btn-purple' text='Envoyer un message' icon='fas fa-envelope' action='')
+      //button.btn.btn-purple.text-white.mx-auto.block Envoyer un message
 
-    //form(v-model="valid" @submit.prepend)
-      .flex.items-center
-        select.border.bg-white.outlined.rounded.h-12(class='w-7/12' v-model='gender' value='Etat civil' required)
-          option(disabled='', value='') Choisissez
-          option Monsieur
-          option Madame
-          option Mademoiselle
-        input#lastname.outlined.border.rounded.h-12.p-3.mx-3(class='w-full' placeholder='Nom de famille:' prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='text', label='Nom', v-model.trim='lastname ')
-        input#firstname.outlined.border.rounded.h-12.p-3(class='w-full' placeholder='Prénom' prepend-icon='mdi-account', :append-icon="firstname ? 'mdi-check' : ''", rounded, type='text', label='Prénom', v-model.trim='firstname')
+    form(v-model="valid" @submit.prevent='sendmail')
+      Input(width='w-full' label='Nom: ' prependIcon='fas fa-users' appendIcon='appendIcon' v-model='lastname' )
+      Input(width='w-full' label='Prénom: ' prependIcon='fas fa-user' appendIcon='appendIcon' v-model='firstname' )
+      Input(width='w-full' label='Email: ' type='email' prependIcon='fas fa-envelope' appendIcon='appendIcon' v-model='email' )
+      Input(width='w-full' label='Téléphone: ' type='' prependIcon='fas fa-phone' appendIcon='appendIcon' v-model='phone' )
+      Input(width='w-full' label='Objet: ' type='' prependIcon='fas fa-user-tag' appendIcon='appendIcon' v-model='msgTitle' )
 
-      //p {{ gender }} {{ lastname }} {{ firstname }}
+      .flex.my-3.items-center.w-full
+        span.text-gray-800.far.fa-keyboard(class='w-1/12')
+        textarea.border.rounded.m-3.p-3.w-full(placeholder='Votre message' label='Message', rows='2', v-model='message' required)
 
-      div.flex.my-4
-
-      div.flex.my-4
-        input#society.outlined.border.rounded.h-12.p-3(class='w-9/12' placeholder='Raison sociale' prepend-icon='mdi-office-building' :append-icon="society ? 'mdi-check' : ''", type='text', rounded, label='Entreprise', v-model='society')
-        p(class='w-3/12') {{society}}
-      div.flex.my-4
-        input#email.outlined.border.rounded.h-12.p-3(class='w-9/12' placeholder='Email' prepend-icon='mdi-at' type='email', :append-icon="email ? 'mdi-check' : ''", label='Email', rounded, v-model='email')
-        p(class='w-3/12') {{email}}
-      div.flex.my-4
-        input#phone.outlined.border.rounded.h-12.p-3(class='w-9/12' placeholder='Téléphone' prepend-icon='mdi-phone' type='text', :append-icon="phone ? 'mdi-check' : ''", label='Tél.', rounded, v-model.trim.number='phone')
-        p(class='w-3/12') {{phone}}
-
-      div.flex.my-4
-        input#title.outlined.border.rounded.h-12.p-3(class='w-9/12' placeholder='Titre du message' prepend-icon='mdi-phone' type='phone', :append-icon="phone ? 'mdi-check' : ''", label='Tél.', rounded, v-model='title')
-        p(class='w-3/12') {{title}}
-      div.flex.my-4
-        textarea#message.outlined.border.rounded.p-3(class='w-9/12' placeholder='Votre message' prepend-icon='mdi-keyboard' type='text', :append-icon="message ? 'mdi-check' : ''", label='Message', rounded, rows='3', v-model='message' required)
-        p(class='w-3/12') {{message}}
-      div.flex.my-4.items-center
-        input#checkbox.mr-2(prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='checkbox', v-model='checkbox' )
+      .flex.my-4.items-center
+        input#checkbox.mr-2(class='w-1/12' prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='checkbox', v-model='checkbox' )
         label(v-model="checkbox" label="") Je certifie que toutes les informations fournies ci-dessus sont exactes
-      div#submit.flex
-        input.btn.btn-blue.mr-2(type='submit' href='mailto:fabezio@outlook.fr' value='Envoyer')
-        button.btn.btn-warning(color="info") Annuler
+
+      .flex.items-center
+        Input.btn.btn-blue.mr-2(type='submit' href='mailto:fabezio@outlook.fr' value='ENVOYER' prependIcon='fas fa-paper-plane')
+        ActionButton.h-12( color="btn-warning" text='annuler' icon='fas fa-times')
 
 </template>
 
 <script>
 export default {
-  layout: '',
+  layout: 'portrait',
   data: () => ({
     selected: null,
     gender: [],
@@ -88,3 +72,5 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped></style>
