@@ -24,6 +24,7 @@ div.sticky.inset-x-0.top-0
     .navbar-end(:class='navCollapse ? "block" : "hidden"' class='lg:flex-row lg:items-center lg:w-auto lg:flex lg:justify-start')
       .navbar-item.flex.flex-grow.justify-end
         Sign
+        SettingsButton
         //div(v-for='(key, i) in logs', :key='i')
           //nuxt-link.nav-link.buttons(:to='key.route')
           button.block.btn.mx-1(v-show='key.visible' :class='key.color' @click='')
