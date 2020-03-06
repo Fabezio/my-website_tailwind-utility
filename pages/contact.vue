@@ -8,22 +8,22 @@
       //button.btn.btn-purple.text-white.mx-auto.block Envoyer un message
 
     form(v-model="valid" @submit.prevent='sendmail')
-      Input(width='w-full' label='Nom: ' prependIcon='fas fa-users' appendIcon='appendIcon' v-model='lastname' )
-      Input(width='w-full' label='Prénom: ' prependIcon='fas fa-user' appendIcon='appendIcon' v-model='firstname' )
-      Input(width='w-full' label='Email: ' type='email' prependIcon='fas fa-envelope' appendIcon='appendIcon' v-model='email' )
-      Input(width='w-full' label='Téléphone: ' type='' prependIcon='fas fa-phone' appendIcon='appendIcon' v-model='phone' )
-      Input(width='w-full' label='Objet: ' type='' prependIcon='fas fa-user-tag' appendIcon='appendIcon' v-model='msgTitle' )
-
-      .flex.my-3.items-center.w-full
-        span.text-gray-800.far.fa-keyboard(class='w-1/12')
+      IconInput(width='w-full' label='Nom: ' prependIcon='fas fa-users' appendIcon='' v-model='lastname' )
+      IconInput(width='w-full' label='Prénom: ' prependIcon='fas fa-user' appendIcon='appendIcon' v-model='firstname' )
+      IconInput(width='w-full' label='Email: ' type='email' prependIcon='fas fa-envelope' appendIcon='appendIcon' v-model='email' )
+      IconInput(width='w-full' label='Téléphone: ' type='' prependIcon='fas fa-phone' appendIcon='appendIcon' v-model='phone' )
+      IconInput(width='w-full' label='Objet: ' type='' prependIcon='fas fa-user-tag' appendIcon='appendIcon' v-model='msgTitle' )
+      IconTextarea(v-model='message' label='Votre message: ' prependIcon='fas fa-comment')
+      //.flex.my-3.items-center.w-full
+        span.text-gray-800.fas.fa-comment(class='w-1/12')
         textarea.border.rounded.m-3.p-3.w-full(placeholder='Votre message' label='Message', rows='2', v-model='message' required)
 
       .flex.my-4.items-center
-        input#checkbox.mr-2(class='w-1/12' prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='checkbox', v-model='checkbox' )
+        input#checkbox.mr-2( prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='checkbox', v-model='checkbox' )
         label(v-model="checkbox" label="") Je certifie que toutes les informations fournies ci-dessus sont exactes
 
       .flex.items-center
-        Input.btn.btn-blue.mr-2(type='submit' href='mailto:fabezio@outlook.fr' value='ENVOYER' prependIcon='fas fa-paper-plane')
+        IconInput.btn.btn-blue.mr-2(type='submit' href='mailto:fabezio@outlook.fr' value='ENVOYER' prependIcon='fas fa-paper-plane')
         ActionButton.h-12( color="btn-warning" text='annuler' icon='fas fa-times')
 
 </template>

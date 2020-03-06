@@ -1,7 +1,7 @@
 <template lang="pug">
-.my-4.flex.items-center
-  span.text-gray-800(class='w-1/12' :class='prependIcon')
-  input.outlined.border.rounded.h-12.p-3.mx-3(:class='width' :placeholder='label' :type='type' required)
+.my-4.flex.items-center.border.rounded.outlined
+  span.text-gray-800.mx-3( :class='prependIcon')
+  textarea.p-3(:class='width' :placeholder='label' :type='type' rows='2' required)
   span(:class="appendIcon")
 </template>
 <script>
