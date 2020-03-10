@@ -30,6 +30,13 @@
         //input#checkbox.mr-2(type='checkbox', v-model='checkbox' required)
         //label.text-justify(v-model="checkbox" ) Je certifie que toutes les informations fournies ci-dessus sont exactes
 
+      div.text-red-700(v-if='errors.length != 0')
+        ul
+          div(v-for='(error, i) in errors' :key='i')
+            li {{i}}. {{error}}
+
+      //div(v-if='errors.length == 0') Merci pour votre confiance.
+
       .flex.items-center
         SubmitButton
         //IconInput.mr-2(color='btn-info' type='submit' href='mailto:fabezio@outlook.fr' value='ENVOYER' prependIcon='fas fa-paper-plane')
@@ -41,13 +48,11 @@
 export default {
   layout: 'portrait',
   data: () => ({
-    name: '',
-    firstname: '',
-    phone: '',
-    email: '',
-    msgTitle: '',
-    message: '',
+    email: null,
+    msgTitle: null,
+    message: null,
     mailForm: [],
+    errors: [],
     checked: false
     /*
     selected: null,
@@ -66,6 +71,19 @@ export default {
     */
   }),
   methods: {
+    checkForm(e) {
+      if (this.email && this.msgTitle && this.message) return true
+      this.errors = []
+      if (!this.email) this.errors.push('Email Requis')
+      if (!this.msgTitle) this.errors.push('Il faut un titre à votre message')
+      if (!this.message)
+        this.errors.push('Un message est nécessaire, quelques mots suffisent.')
+      if (!this.checked)
+        this.errors.push(
+          "Vous devez cochez la case pour envoyer, cela confirmera l'authenticité de votre message"
+        )
+      e.preventDefault()
+    }
     /*
     fullField() {
       this.formFields.model.push(this.formFields.model)
