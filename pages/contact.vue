@@ -7,16 +7,16 @@
       ActionButton(color='btn-purple' text='Envoyer un message' icon='fas fa-envelope' action='')
       //button.btn.btn-purple.text-white.mx-auto.block Envoyer un message
 
-    form(v-model="valid" @submit.prevent='sendmail')
-      IconInput(width='w-full' label='Nom: ' prependIcon='fas fa-users' appendIcon='' v-model='name' )
-      p() {{name}}
+    form(v-model="sendmail" @submit.prevent='sendmail')
+      //IconInput(width='w-full' label='Nom: ' prependIcon='fas fa-users' appendIcon='' v-model='name' )
+      //p() {{name}}
       //p.text-red-500(v-if='!lastname') veuillez entrer votre nom
-      IconInput(width='w-full' label='Prénom: ' prependIcon='fas fa-user' appendIcon='appendIcon' v-model='firstname' )
-      p() {{firsname}}
+      //IconInput(width='w-full' label='Prénom: ' prependIcon='fas fa-user' appendIcon='appendIcon' v-model='firstname' )
+      //p() {{firsname}}
       IconInput(width='w-full' label='Email: ' type='email' prependIcon='fas fa-envelope' appendIcon='appendIcon' v-model='email' )
       p() {{email}}
-      IconInput(width='w-full' label='Téléphone: ' type='' prependIcon='fas fa-phone' appendIcon='appendIcon' v-model='phone' )
-      p() {{phone}}
+      //IconInput(width='w-full' label='Téléphone: ' type='' prependIcon='fas fa-phone' appendIcon='appendIcon' v-model='phone' )
+      //p() {{phone}}
       IconInput(width='w-full' label='Objet: ' type='' prependIcon='fas fa-user-tag' appendIcon='appendIcon' v-model='msgTitle' )
       p() {{msgTitle}}
       IconTextarea(v-model='message' label='Votre message: ' prependIcon='fas fa-comment')
@@ -25,13 +25,15 @@
         span.text-gray-800.fas.fa-comment(class='w-1/12')
         textarea.border.rounded.m-3.p-3.w-full(placeholder='Votre message' label='Message', rows='2', v-model='message' required)
 
-      .flex.my-4.items-center
-        input#checkbox.mr-2( prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='checkbox', v-model='checkbox' )
-        label.text-justify(v-model="checkbox" label="") Je certifie que toutes les informations fournies ci-dessus sont exactes
+      CheckBox.my-4()
+      //.flex.my-4.items-center
+        //input#checkbox.mr-2(type='checkbox', v-model='checkbox' required)
+        //label.text-justify(v-model="checkbox" ) Je certifie que toutes les informations fournies ci-dessus sont exactes
 
       .flex.items-center
-        IconInput.btn.btn-blue.mr-2(type='submit' href='mailto:fabezio@outlook.fr' value='ENVOYER' prependIcon='fas fa-paper-plane')
-        ActionButton.h-12( color="btn-warning" text='annuler' icon='fas fa-times')
+        SubmitButton
+        //IconInput.mr-2(color='btn-info' type='submit' href='mailto:fabezio@outlook.fr' value='ENVOYER' prependIcon='fas fa-paper-plane')
+        ActionButton.h-12(color="btn-warning" text='annuler' icon='fas fa-times')
 
 </template>
 
@@ -45,6 +47,7 @@ export default {
     email: '',
     msgTitle: '',
     message: '',
+    mailForm: [],
     checked: false
     /*
     selected: null,
@@ -83,4 +86,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+.btn-info
+  @apply bg-blue-400
+</style>

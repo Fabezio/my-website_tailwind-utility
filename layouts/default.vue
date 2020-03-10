@@ -42,6 +42,21 @@ export default {
   @apply text-base
   @apply mx-1
 
+.btn-info
+  @apply bg-blue-500
+  &:hover
+    @apply bg-blue-700;
+
+.btn-success
+  @apply bg-green-400
+  &:hover
+    @apply bg-green-700
+
+.btn-warning
+  @apply bg-yellow-600;
+  &:hover
+    @apply bg-yellow-700;
+
 .btn-purple
   @apply bg-purple-600;
   &hover
