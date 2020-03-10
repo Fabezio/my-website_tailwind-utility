@@ -8,19 +8,26 @@
       //button.btn.btn-purple.text-white.mx-auto.block Envoyer un message
 
     form(v-model="valid" @submit.prevent='sendmail')
-      IconInput(width='w-full' label='Nom: ' prependIcon='fas fa-users' appendIcon='' v-model='lastname' )
+      IconInput(width='w-full' label='Nom: ' prependIcon='fas fa-users' appendIcon='' v-model='name' )
+      p() {{name}}
+      //p.text-red-500(v-if='!lastname') veuillez entrer votre nom
       IconInput(width='w-full' label='Prénom: ' prependIcon='fas fa-user' appendIcon='appendIcon' v-model='firstname' )
+      p() {{firsname}}
       IconInput(width='w-full' label='Email: ' type='email' prependIcon='fas fa-envelope' appendIcon='appendIcon' v-model='email' )
+      p() {{email}}
       IconInput(width='w-full' label='Téléphone: ' type='' prependIcon='fas fa-phone' appendIcon='appendIcon' v-model='phone' )
+      p() {{phone}}
       IconInput(width='w-full' label='Objet: ' type='' prependIcon='fas fa-user-tag' appendIcon='appendIcon' v-model='msgTitle' )
+      p() {{msgTitle}}
       IconTextarea(v-model='message' label='Votre message: ' prependIcon='fas fa-comment')
+      p() {{message}}
       //.flex.my-3.items-center.w-full
         span.text-gray-800.fas.fa-comment(class='w-1/12')
         textarea.border.rounded.m-3.p-3.w-full(placeholder='Votre message' label='Message', rows='2', v-model='message' required)
 
       .flex.my-4.items-center
         input#checkbox.mr-2( prepend-icon='mdi-account-outline' :append-icon="lastname ? 'mdi-check' : ''", rounded, type='checkbox', v-model='checkbox' )
-        label(v-model="checkbox" label="") Je certifie que toutes les informations fournies ci-dessus sont exactes
+        label.text-justify(v-model="checkbox" label="") Je certifie que toutes les informations fournies ci-dessus sont exactes
 
       .flex.items-center
         IconInput.btn.btn-blue.mr-2(type='submit' href='mailto:fabezio@outlook.fr' value='ENVOYER' prependIcon='fas fa-paper-plane')
@@ -32,15 +39,17 @@
 export default {
   layout: 'portrait',
   data: () => ({
-    selected: null,
-    gender: [],
-    lastname: '',
+    name: '',
     firstname: '',
-    society: '',
     phone: '',
     email: '',
-    title: '',
+    msgTitle: '',
     message: '',
+    checked: false
+    /*
+    selected: null,
+    gender: [],
+    society: '',
     name: [],
     checkbox: false,
     nameRules: [
@@ -51,6 +60,7 @@ export default {
       (v) => !!v || `L'email est obligatoire`,
       (v) => /.+@.+/.test(v) || `L'email doit contenir les symboles '@' et '.' `
     ]
+    */
   }),
   methods: {
     /*
