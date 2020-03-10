@@ -1,7 +1,7 @@
 <template lang="pug">
-button.btn(:class='color' @click='action')
-  span(:class='icon')
-  input()
+button.btn.btn-info.h-12()
+  span(class='fas fa-paper-plane')
+  input.btn-info.uppercase.font-bold(type='submit' :value='text')
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
   props: {
     text: {
       type: String,
-      default: 'Action'
+      default: 'Envoyer'
     },
     color: {
       type: String,
@@ -30,19 +30,9 @@ export default {
 <style lang="stylus" scoped>
 .btn
   @apply text-white
-
 .btn-info
-  @apply bg-blue-500
+  @apply bg-blue-400
   &:hover
+  &:hover input
     @apply bg-blue-700;
-
-.btn-success
-  @apply bg-green-400
-  &:hover
-    @apply bg-green-700
-
-.btn-warning
-  @apply bg-yellow-500;
-  &:hover
-    @apply bg-yellow-700;
 </style>

@@ -4,6 +4,7 @@ import camelCase from 'lodash/camelCase'
 import VueComp from '@vue/composition-api'
 
 Vue.use(VueComp)
+
 const requireComponent = require.context(
   '@/components',
   false,

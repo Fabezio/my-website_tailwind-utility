@@ -30,19 +30,4 @@ export default {
 <style lang="stylus" scoped>
 .btn
   @apply text-white
-
-.btn-info
-  @apply bg-blue-500
-  &:hover
-    @apply bg-blue-700;
-
-.btn-success
-  @apply bg-green-400
-  &:hover
-    @apply bg-green-700
-
-.btn-warning
-  @apply bg-yellow-500;
-  &:hover
-    @apply bg-yellow-700;
 </style>
