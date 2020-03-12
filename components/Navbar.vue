@@ -94,6 +94,7 @@ export default {
 <style lang="stylus" scoped>
 .link
   letter-spacing 2px
+  @apply text-gray-300
 .btn
   @apply text-purple-900;
 
@@ -102,4 +103,6 @@ export default {
 
 .brand-icon
 	margin-right 0
+.far, .fas
+  @apply text-gray-300
 </style>
