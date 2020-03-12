@@ -4,7 +4,7 @@ div.min-h-screen
   MoreInfo.top-1
   //SignIn
   nuxt
-  Footer.mt-5(class="md:relative md:bottom-0")
+  Footer.mt-10(class="relative md:bottom-0")
 
 </template>
 
@@ -16,8 +16,10 @@ export default {}
 <style lang="stylus">
 h1
   @apply uppercase
+  @apply mt-10
   letter-spacing 2px
 h2
+  @apply mt-10
   @apply capitalize
   letter-spacing 1px
 </style>

@@ -4,7 +4,7 @@ div
   MoreInfo
   //SignIn
   // Clock
-  nuxt.container(class="md:my-20")
+  nuxt.container(class="md:my-10")
   Footer.mt-5.pt-5(class="lg:absolute lg:bottom-0")
 
 </template>

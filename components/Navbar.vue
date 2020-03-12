@@ -18,7 +18,7 @@ div.sticky.inset-x-0.top-0
             span.text-base.link(
               class='ml-2').uppercase {{link.name }}
 
-    .navbar-end(:class='navCollapse ? "block" : "hidden"' class='lg:flex-row lg:items-center lg:w-auto lg:flex lg:justify-start')
+    //.navbar-end(:class='navCollapse ? "block" : "hidden"' class='lg:flex-row lg:items-center lg:w-auto lg:flex lg:justify-start')
       .navbar-item.flex.flex-grow.justify-end
         Sign
         SettingsButton
