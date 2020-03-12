@@ -46,7 +46,7 @@
 
 <script>
 export default {
-  layout: 'portrait',
+  layout: '',
   data: () => ({
     email: null,
     msgTitle: null,
