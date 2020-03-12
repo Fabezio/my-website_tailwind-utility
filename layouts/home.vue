@@ -13,4 +13,11 @@ div.min-h-screen
 export default {}
 </script>
 
-<style></style>
+<style lang="stylus">
+h1
+  @apply uppercase
+  letter-spacing 2px
+h2
+  @apply capitalize
+  letter-spacing 1px
+</style>
