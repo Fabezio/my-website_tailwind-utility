@@ -1,6 +1,6 @@
 <template lang="pug">
-footer.bg-purple-600.p-1.text-white.inset-x-0.border-t.border-purple-700
-  nav.flex.items-center.justify-end.flex-wrap.pb-3.px-3
+footer.bg-purple-600.px-1.py-2.text-white.inset-x-0.border-t.border-purple-700
+  nav.flex.items-center.justify-end.flex-wrap.pb-3.px-3.pt-0
     //.flex.items-center.flex-shrink-0.text-white.mr-6
 
     //div(v-for='(link, i) in footerLinks', :key='i')
@@ -19,9 +19,13 @@ footer.bg-purple-600.p-1.text-white.inset-x-0.border-t.border-purple-700
     a(v-for='(link, index) in socialNetworks' :key='index' :href='link.url' target='_blank')
       img.w-6.ml-2(:src='link.logo')
 
-  div.footertext(cols='12')
-    div.center-text {{ new Date().getFullYear() }}
-      strong  &copy; fabezio.com
+  h6.footertext.pb-2(cols='12')
+    .center-text
+      strong fabezio.com
+      |
+      | &copy; {{ new Date().getFullYear() }}
+      |
+      i - tous droits réservés
 
 </template>
 
