@@ -85,7 +85,7 @@ p
 	@apply text-red-700
   @apply rounded-full
   &active
-    @apply text-red-300;
+    @apply text-red-400;
     @apply py-3 !important;
   &:hover
     @apply rounded-full
@@ -95,7 +95,7 @@ p
 
 .nuxt-link-exact-active:not(.brand) button
   @apply rounded-full !important
-  @apply bg-purple-300;
+  @apply bg-purple-500;
   @apply py-1 !important;
   @apply w-full;
 
