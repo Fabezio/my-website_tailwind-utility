@@ -3,8 +3,8 @@ div.min-h-screen
   Navbar.fixed.top-0
   MoreInfo.top-1
   //SignIn
-  nuxt.z-50.container
-  Footer(class="md:absolute md:bottom-0")
+  nuxt
+  Footer.mt-5(class="md:relative md:bottom-0")
 
 </template>
 

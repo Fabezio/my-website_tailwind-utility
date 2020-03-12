@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  h1.text-center.pb-5 Formations
+  h1.text-center.pb-5.uppercase Acquis
   SkillStack.skill-stack
 
 

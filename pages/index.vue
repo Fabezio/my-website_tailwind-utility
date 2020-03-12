@@ -1,13 +1,14 @@
 <template lang="pug">
   div
+    img.banner.w-full.h-auto(src='/img/bannière_métal_luisant.png')
     .w-screen.border(class='lg:max-w-full lg:flex')
-      img.w-auto.rounded(class='hidden lg:block ' src='@/assets/img/me.jpg')
+      img#photoid.w-auto.rounded-b-lg(class='hidden lg:block ' src='img/me.jpg')
       .bg-white.rounded-b.p-4.flex.flex-col.justify-around.leading-normal(class='lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r')
         div.flex(class='flex-col' )
           h1.mb-3.text-left.text-center(class='lg:text-left') fabezio.org
           h2.text-center(class='lg:text-left') Développeur Web FrontEnd spécialisé JS
 
-    div.my-auto
+    div.my-auto.container
       h2.p-5.text-center Bienvenue sur ce site!
       main.mx-2(class="lg:mx-0")
 
@@ -52,10 +53,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-img
+#photoid
 	width 200px
 	height 200px
-.id-photo
-	border-radius 3px
-	border black solid 1px
 </style>
