@@ -1,12 +1,13 @@
 <template lang="pug">
   div
     img.banner.w-full.h-auto(src='/img/bannière_métal_luisant.png')
-    .w-screen.border(class='lg:max-w-full lg:flex')
+    .border.rounded-b-lg(class='lg:max-w-full md:w-11/12 md:mx-auto lg:flex')
       img#photoid.w-auto.rounded-b-lg(class='hidden lg:block ' src='img/me.jpg')
       .bg-white.rounded-b.p-4.flex.flex-col.justify-around.leading-normal(class='lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r')
-        div.flex(class='flex-col' )
-          h1.mb-3.text-left.text-center(class='lg:text-left') fabezio.org
-          h2.text-center(class='lg:text-left') Développeur Web FrontEnd spécialisé JS
+        .flex(class='flex-col' )
+          h1.my-0.text-left.text-center(class='lg:text-left') fabezio.org
+          h2.my-0.text-center(class='lg:text-left') Développeur Web FrontEnd spécialisé JS
+          p.mt-2.text-xl Je code pour vous
 
     div.my-auto.container
       h2.p-5.text-center Bienvenue sur ce site!
