@@ -1,15 +1,15 @@
 <template lang="pug">
-  #services
-    h1.text-center.mb-4.header-shadow Services
-    .card-deck.my-4
-      .card.silver-shadow(v-for='(service, i) in services', :key='i')
-        h2.text-center.card-header {{service.title}}
-        .card-body
-          p.card-text.text-justify {{service.paragraph}}
-    .row.my-5
-      .col-md-12
-        nuxt-link(to='/contact')
-          button.btn.btn-info.w-full.text-white.mt-5 Oui, je demande une création/amélioration de site web
+#services
+  h1.text-center.mb-4.header-shadow Services
+  .card-deck.my-4
+    .card.silver-shadow(v-for='(service, i) in services', :key='i')
+      h2.text-center.card-header {{service.title}}
+      .card-body
+        p.card-text.text-justify {{service.paragraph}}
+  .row.my-5
+    .col-md-12
+      a(href='#contact')
+        button.btn.btn-info.w-full.text-white.mt-5 Oui, je demande une création/amélioration de site web
 
 </template>
 

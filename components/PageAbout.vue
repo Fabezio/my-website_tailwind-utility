@@ -1,5 +1,5 @@
 <template lang="pug">
-  div#author(class='')
+  div#about(class='')
     h1.title.text-center Qui je suis
     article.text-justified.mx-2(class="lg:mx-0")
       p Je suis Fabezio, développeur Web orienté Javascript, plus exactement un codeur Javascript orienté web, spécialisé vueJS / nuxtJS.

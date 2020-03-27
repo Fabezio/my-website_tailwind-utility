@@ -2,7 +2,7 @@
 div.sticky.inset-x-0.top-0
   nav.flex.items-center.justify-between.flex-wrap.py-1.px-3.bg-purple-600
     .flex.items-center.flex-shrink-0.text-gray-500.mr-6
-      nuxt-link.brand.flex.btn.items-center(to='/')
+      a.brand.flex.btn.items-center(href='#home')
         img(src='/img/favicon-32.png')
         div.link.text-2xl.ml-1.font-semibold.tracking-tight.uppercase fabezio
 
@@ -12,10 +12,10 @@ div.sticky.inset-x-0.top-0
 
     #links.flex-col.w-full.flex-grow.text-center.block( :class='navCollapse ? "block" : "hidden"' class='lg:flex-row lg:items-center lg:w-auto lg:flex lg:justify-start')
       div(v-for='(link, i) in navbarLinks', :key='i')
-        nuxt-link( :to='link.route' :title='link.name' @click='!navbarToggle')
+        a( :href='link.page' :title='link.name' @click='!navbarToggle')
           button.btn.block.indigo(class='inline-block lg:mt-0 hover:text-white hover:indigo')
             span(:class='link.icon')
-            span.text-base.link(
+            span.text-xl.link(
               class='ml-2').uppercase {{link.name }}
 
     //.navbar-end(:class='navCollapse ? "block" : "hidden"' class='lg:flex-row lg:items-center lg:w-auto lg:flex lg:justify-start')
