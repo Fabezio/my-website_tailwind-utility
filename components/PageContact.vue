@@ -2,12 +2,12 @@
 #contact.mx-auto.pa-3(class='md:w-4/12 text-center')
   h1.pb-6.text-center Contactez-moi
 
-  //a(href='mailto:fabezio@outlook.fr')
+  a(href='mailto:fabezio@outlook.fr')
     //ActionButton()
     ActionButton(color='btn-purple' text='Envoyer un message' icon='fas fa-envelope' action='')
     //button.btn.btn-purple.text-white.mx-auto.block Envoyer un message
 
-  form(v-model="sendmail" @submit.prevent='sendmail')
+  //form(v-model="sendmail" @submit.prevent='sendmail')
     //IconInput(width='w-full' label='Nom: ' prependIcon='fas fa-users' appendIcon='' v-model='name' )
     //p() {{name}}
     //p.text-red-500(v-if='!lastname') veuillez entrer votre nom
