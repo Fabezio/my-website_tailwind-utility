@@ -1,8 +1,7 @@
 <template lang="pug">
-div
-  h1.text-center.pb-5 Formations
+#skills
+  h1.text-center.pb-5.uppercase Acquis
   SkillStack.skill-stack
-
 
     //template(v-slot:activator='{on}')
       div(v-for='(code) in codes', :key='code.title')
@@ -31,7 +30,7 @@ div
 <script>
 import SkillStack from '@/components/SkillStack'
 export default {
-  layout: 'landscape',
+  layout: '',
   name: '',
   components: {
     SkillStack

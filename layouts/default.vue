@@ -2,25 +2,17 @@
 div
   Navbar.top-0.fixed
   MoreInfo
+  //SignIn
   // Clock
-  nuxt.container(class="md:my-20")
+  nuxt.container(class="md:my-10")
   Footer.mt-5.pt-5(class="lg:absolute lg:bottom-0")
 
 </template>
 
 <script>
 // import pdf from 'vue-pdf';
-import Navbar from '@/components/Navbar'
-import Clock from '@/components/Clock'
-import Footer from '@/components/Footer'
-import MoreInfo from '@/components/MoreInfo'
+
 export default {
-  components: {
-    Navbar,
-    Clock,
-    MoreInfo,
-    Footer
-  },
   data() {
     return {}
   },
@@ -40,39 +32,48 @@ export default {
 </script>
 
 <style lang="stylus">
-.btn {
-  @apply font-bold;
-  @apply rounded;
-}
-.btn-blue {
-  @apply bg-blue-500;
-  @apply text-white;
-}
-.btn-blue:hover {
-  @apply bg-blue-700;
-}
-.btn-warning {
-  @apply bg-yellow-500;
-  @apply text-white;
-}
-.btn-warning:hover {
-  @apply bg-yellow-700;
-}
-.btn-purple {
+.btn
+  @apply rounded
+  @apply p-2
+  @apply mx-1
+  @apply font-bold
+
+.btn span
+  @apply text-base
+  @apply mx-1
+
+.btn-info
+  @apply bg-blue-500
+  &:hover
+    @apply bg-blue-700;
+
+.btn-success
+  @apply bg-green-400
+  &:hover
+    @apply bg-green-700
+
+.btn-warning
+  @apply bg-yellow-600;
+  &:hover
+    @apply bg-yellow-700;
+
+.btn-purple
   @apply bg-purple-600;
-}
-h1 {
+  &hover
+    @apply bg-purple-300
+
+h1
   @apply text-5xl;
   @apply font-bold;
-}
-h2 {
+
+h2
   @apply text-4xl;
   @apply font-bold;
-}
-h3 {
+
+h3
   @apply text-3xl;
   @apply font-bold;
-}
+
 
 body
 	font-family sans-serif
@@ -81,24 +82,22 @@ body
 p
 	text-align justify
 .indigo
-	color indigo !important
+	@apply text-red-700
+  @apply rounded-full
+  &active
+    @apply text-red-400;
+    @apply py-3 !important;
+  &:hover
+    @apply rounded-full
+    @apply bg-purple-300;
+    @apply opacity-75;
+    @apply w-full;
 
-.indigo:active {
-  @apply text-red-300;
-  @apply py-2;
-}
-.indigo:hover {
-  @apply bg-purple-300;
-  @apply opacity-75;
-  @apply rounded-full;
+.nuxt-link-exact-active:not(.brand) button
+  @apply rounded-full !important
+  @apply bg-purple-500;
+  @apply py-1 !important;
   @apply w-full;
-}
-.nuxt-link-exact-active:not(.brand) button {
-  @apply bg-purple-300;
-  @apply py-2 !important;
-  @apply w-full;
-}
-/*
-En cas de nouveaux styles
-*/
+
+// En cas de nouveaux styles
 </style>

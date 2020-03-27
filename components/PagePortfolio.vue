@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+#portfolio
   h1.text-center.mb-4 Portfolio
   h2.text-center.mb-3 Sites créés en formation:
   .flex.mb-4.flex-wrap.justify-center
@@ -16,7 +16,7 @@ div
 // import portfolio from './portfolio'
 export default {
   name: '',
-  layout: 'landscape',
+  layout: '',
   /*
   components: {
     // portfolio
