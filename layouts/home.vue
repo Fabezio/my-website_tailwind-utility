@@ -1,24 +1,25 @@
 <template lang="pug">
 div.min-h-screen
   Navbar.fixed.top-0
-  MoreInfo.top-1.
-  nuxt.z-50.container
-  Footer(class="md:absolute md:bottom-0")
+  MoreInfo.top-1
+  //SignIn
+  nuxt
+  Footer.mt-10(class="relative md:bottom-0")
 
 </template>
 
 <script>
 // import pdf from 'vue-pdf';
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import MoreInfo from '@/components/MoreInfo.vue'
-export default {
-  components: {
-    Navbar,
-    MoreInfo,
-    Footer
-  }
-}
+export default {}
 </script>
 
-<style></style>
+<style lang="stylus">
+h1
+  @apply uppercase
+  @apply mt-10
+  letter-spacing 2px
+h2
+  @apply mt-10
+  @apply capitalize
+  letter-spacing 1px
+</style>
