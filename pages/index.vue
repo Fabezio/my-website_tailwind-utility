@@ -2,6 +2,7 @@
 div
   PageHome
   .container
+    Home
     hr
     Services
     hr

@@ -2,7 +2,7 @@
 #home
   img.banner.w-full.h-auto(src='/img/bannière_métal_luisant.png')
   .border.rounded-b-lg(class='lg:max-w-full md:w-11/12 md:mx-auto lg:flex')
-    img#photoid.w-auto.rounded-b-lg(class='hidden lg:block ' src='img/me.jpg')
+    img#photoid.w-auto.rounded-b-lg(class='hidden lg:block ' src='img/face_co.png')
     .bg-white.rounded-b.p-4.flex.flex-col.justify-around.leading-normal(class='lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r')
       .flex(class='flex-col' )
         h1.my-0.text-left.text-center(class='lg:text-left') fabezio.org
