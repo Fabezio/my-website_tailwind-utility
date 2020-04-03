@@ -6,7 +6,7 @@ import VueComp from '@vue/composition-api'
 Vue.use(VueComp)
 
 const requireComponent = require.context(
-  '@/components',
+  '@/components/main',
   false,
   /[A-Z]\w+\.(vue|js)$/
 )

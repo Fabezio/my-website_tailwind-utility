@@ -3,15 +3,15 @@ div
   PageHome
   .container
     hr
-    PageServices
+    Services
     hr
-    PageSkills
+    Skills
     hr
-    PagePortfolio
+    Portfolio
     hr
-    PageAbout
+    About
     hr
-    PageContact
+    Contact
 
 </template>
 
