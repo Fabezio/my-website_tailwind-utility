@@ -1,18 +1,28 @@
 <template lang="pug">
 div
-  PageHome
-  .container
-    Home
-    hr
-    Services
-    hr
-    Skills
-    hr
-    Portfolio
-    hr
-    About
-    hr
-    Contact
+  .bg-white
+    .container.pb-5
+      Home
+    //- hr
+  .bg-gray-500
+    .container.py-5
+      Services
+    //- hr
+  .bg-white
+    .container.py-5
+      Skills
+    //- hr
+  .bg-gray-500
+    .container.py-5
+      Portfolio
+    //- hr
+  .bg-white
+    .container.py-5
+      About
+    //- hr
+  .bg-gray-500
+    .container.py-5
+      Contact
 
 </template>
 

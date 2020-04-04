@@ -1,17 +1,16 @@
 <template lang="pug">
 #home
-  img.banner.w-full.h-auto(src='/img/bannière_métal_luisant.png')
-  .border.rounded-b-lg(class='lg:max-w-full md:w-11/12 md:mx-auto lg:flex')
-    img#photoid.w-auto.rounded-b-lg(class='hidden lg:block ' src='img/face_co.png')
-    .bg-white.rounded-b.p-4.flex.flex-col.justify-around.leading-normal(class='lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r')
-      .flex(class='flex-col' )
-        h1.my-0.text-left.text-center(class='lg:text-left') fabezio.org
-        h2.my-0.text-center(class='lg:text-left') Développeur Web FrontEnd spécialisé JS
-        p.mt-2.text-xl Je code pour vous
+  img.banner.w-screen.h-auto(src='/img/bannière_métal_luisant.png')
+  .border.rounded-b-lg(class='md:max-w-full md:w-12/12 md:mx-auto md:flex')
+    img#photoid.w-screen.rounded-bl-lg(class='hidden md:block ' src='img/face_co.png')
+    .bg-white.rounded-b.p-4.flex.flex-col.justify-evenly.leading-normal(class='md:border-l-0 md:border-t md:border-gray-400 md:rounded-b-none md:rounded-r')
+      h1.text-4xl.my-0.text-left.text-center(class='md:text-left') fabezio.org
+      h2.text-2xl.italic.my-0.text-center(class='md:text-left') Développeur Web FrontEnd spécialisé JS
+      p.mt-2.text-lg Je code pour vous
 
   div.my-auto.container
-    h2.p-5.text-center Bienvenue sur ce site!
-    main.mx-2(class="lg:mx-0")
+    h3.p-5.text-center Bienvenue sur ce site!
+    main.mx-2(class="md:mx-0")
 
       p Si vous êtes ici, c'est que vous avez besoin d'un développeur web, en freelance ou contrat interne. J'ai envie de vous dire que vous êtes au bon endroit; néanmoins vous émettez certainement des réserves et avez besoin de preuves de mes compétences. C'est pourquoi tout est décrit ici.
       p Je vous invite donc à prendre le temps de visiter ce site et consulter
