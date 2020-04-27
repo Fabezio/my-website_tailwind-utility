@@ -16,7 +16,7 @@ export default {
       date: '',
       week: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'],
       timerID: '',
-      cd: new Date()
+      cd: new Date(),
     }
   },
   methods: {
@@ -42,8 +42,8 @@ export default {
         zero += '0'
       }
       return (zero + num).slice(-digit)
-    }
-  }
+    },
+  },
 }
 </script>
 

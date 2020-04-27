@@ -23,11 +23,11 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Développeur web JavaScript Frontend'
-        }
-      ]
+          content: 'Développeur web JavaScript Frontend',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

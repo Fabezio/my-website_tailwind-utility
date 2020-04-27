@@ -165,7 +165,7 @@ export default {
       society: 'MWASTERS',
       email: 'fabezio@outlook.fr',
       trade: '&trade;',
-      space: '&nbsp;'
+      space: '&nbsp;',
     }
   },
   head() {
@@ -175,11 +175,11 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Développeur web JavaScript Frontend'
-        }
-      ]
+          content: 'Développeur web JavaScript Frontend',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

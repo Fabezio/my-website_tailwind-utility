@@ -1,5 +1,5 @@
 <template lang="pug">
-  #services
+  #services.px-20
     h1.text-center.mb-4.header-shadow Services
     .card-deck.my-4
       .card.silver-shadow(v-for='(service, i) in services', :key='i')
@@ -23,8 +23,8 @@ export default {
   },
   computed: {
     ...mapState({
-      services: (state) => state.services.services
-    })
+      services: (state) => state.services.services,
+    }),
   },
   head() {
     return {
@@ -33,11 +33,11 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Développeur web JavaScript Frontend'
-        }
-      ]
+          content: 'Développeur web JavaScript Frontend',
+        },
+      ],
     }
-  }
+  },
   /*
 
     */

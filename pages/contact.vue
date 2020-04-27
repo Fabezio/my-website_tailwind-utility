@@ -53,7 +53,7 @@ export default {
     message: null,
     mailForm: [],
     errors: [],
-    checked: false
+    checked: false,
     /*
     selected: null,
     gender: [],
@@ -83,7 +83,7 @@ export default {
           "Vous devez cochez la case pour envoyer, cela confirmera l'authenticité de votre message"
         )
       e.preventDefault()
-    }
+    },
     /*
     fullField() {
       this.formFields.model.push(this.formFields.model)
@@ -96,11 +96,11 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Développeur web JavaScript Frontend'
-        }
-      ]
+          content: 'Développeur web JavaScript Frontend',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

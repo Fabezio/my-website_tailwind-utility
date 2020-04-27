@@ -10,7 +10,7 @@ export const state = () => ({
       mod: 'voyage',
       alt: 'travel agency',
       name: 'Travel Agency',
-      desc: 'Premier site en HTML / CSS'
+      desc: 'Premier site en HTML / CSS',
     },
     {
       id: '2',
@@ -20,7 +20,7 @@ export const state = () => ({
       mod: 'snakeey',
       alt: 'snakeey',
       name: 'Snakeey',
-      desc: 'Version JS de Snake'
+      desc: 'Version JS de Snake',
     },
     {
       id: '3',
@@ -30,7 +30,7 @@ export const state = () => ({
       alt: 'top 5 actrices',
       mod: 'actrices',
       name: 'Top 5 Actrices',
-      desc: 'Site en jQuery'
+      desc: 'Site en jQuery',
     },
     {
       id: '4',
@@ -40,9 +40,9 @@ export const state = () => ({
       alt: 'do-pe',
       mod: 'dope',
       name: 'Do-Pe',
-      desc: 'Site en VueJS 2'
-    }
-  ]
+      desc: 'Site en VueJS 2',
+    },
+  ],
 })
 
 export const mutations = {
@@ -51,7 +51,7 @@ export const mutations = {
   },
   SET_FOLIO(state, folio) {
     state.folio = folio
-  }
+  },
 }
 
 export const actions = {
@@ -64,5 +64,5 @@ export const actions = {
     return PortfolioService.getFolio(id).then((response) =>
       commit('SET_FOLIO', response.data)
     )
-  }
+  },
 }

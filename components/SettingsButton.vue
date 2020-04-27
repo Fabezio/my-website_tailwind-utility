@@ -6,14 +6,14 @@ ActionButton(color='btn-error' text='Modifier' icon='fas fa-wrench' action='')
 export default {
   data() {
     return {
-      root: false
+      root: false,
     }
   },
   methods: {
     isRoot() {
       this.root = !this.root
-    }
-  }
+    },
+  },
 }
 </script>
 

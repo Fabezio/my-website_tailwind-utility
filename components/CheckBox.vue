@@ -11,9 +11,9 @@ export default {
     iSwear: {
       type: String,
       default:
-        'Je certifie que toutes les informations fournies ci-dessus sont exactes'
-    }
-  }
+        'Je certifie que toutes les informations fournies ci-dessus sont exactes',
+    },
+  },
 }
 </script>
 

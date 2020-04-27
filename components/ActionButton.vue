@@ -9,21 +9,21 @@ export default {
   props: {
     text: {
       type: String,
-      default: 'Action'
+      default: 'Action',
     },
     color: {
       type: String,
-      default: 'btn-info'
+      default: 'btn-info',
     },
     icon: {
       type: String,
-      default: 'fas fa-plus'
+      default: 'fas fa-plus',
     },
     action: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>
 

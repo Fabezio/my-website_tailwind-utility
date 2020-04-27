@@ -3,33 +3,33 @@ export const state = () => ({
     {
       route: '/',
       name: 'accueil',
-      icon: 'fas fa-home'
+      icon: 'fas fa-home',
     },
     {
       route: '/service',
       name: 'services',
-      icon: 'fas fa-user-tie'
+      icon: 'fas fa-user-tie',
     },
     {
       route: '/skills',
       name: 'compétences',
-      icon: 'fas fa-user-graduate'
+      icon: 'fas fa-user-graduate',
     },
     {
       route: '/portfolio',
       name: 'portfolio',
-      icon: 'fas fa-images'
+      icon: 'fas fa-images',
     },
     {
       route: '/contact',
       name: 'contactez-moi',
-      icon: 'fas fa-envelope'
+      icon: 'fas fa-envelope',
     },
     {
       route: '/about',
       name: 'à propos',
-      icon: 'fas fa-comment-alt'
-    }
+      icon: 'fas fa-comment-alt',
+    },
   ],
   footerLinks: [
     /*
@@ -54,5 +54,5 @@ export const state = () => ({
         //   icon: 'fas fa-question-circle'
       }
  */
-  ]
+  ],
 })

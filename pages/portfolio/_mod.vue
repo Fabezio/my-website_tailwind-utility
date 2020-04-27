@@ -15,7 +15,7 @@ div
 export default {
   data() {
     return {
-      mod: this.$route.params.mod
+      mod: this.$route.params.mod,
     }
   },
   computed: {
@@ -23,8 +23,8 @@ export default {
       return this.$store.state.portfolio.portfolio.find(
         (portfolio) => portfolio.mod === this.mod
       )
-    }
-  }
+    },
+  },
 }
 </script>
 

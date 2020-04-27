@@ -25,9 +25,9 @@ export default {
   },
   computed: {
     ...mapState({
-      codes: (state) => state.skills.codes
-    })
-  }
+      codes: (state) => state.skills.codes,
+    }),
+  },
 }
 </script>
 

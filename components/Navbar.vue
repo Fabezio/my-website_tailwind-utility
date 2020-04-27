@@ -46,14 +46,14 @@ export default {
       dropdown: false,
       // signUser: true,
       // logUser: false,
-      dropdownLinks: []
+      dropdownLinks: [],
     }
   },
   computed: {
     ...mapState({
       navbarLinks: (state) => state.links.navbarLinks,
-      logs: (state) => state.logs.logs
-    })
+      logs: (state) => state.logs.logs,
+    }),
   },
   methods: {
     /*
@@ -86,8 +86,8 @@ export default {
     },
     brandToHelp() {
       return this.$router.push('/help')
-    }
-  }
+    },
+  },
 }
 </script>
 

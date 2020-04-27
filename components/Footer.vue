@@ -43,9 +43,9 @@ export default {
   computed: {
     ...mapState({
       footerLinks: (state) => state.links.footerLinks,
-      socialNetworks: (state) => state.social.socialNetworks
-    })
-  }
+      socialNetworks: (state) => state.social.socialNetworks,
+    }),
+  },
 }
 </script>
 

@@ -7,7 +7,7 @@
 module.exports = {
   theme: {
     container: {
-      center: true
+      center: true,
     },
     fontSize: {
       base: '16px',
@@ -16,9 +16,9 @@ module.exports = {
       '3xl': '1.75rem',
       '2xl': '1.50rem',
       xl: '1.25rem',
-      lg: '1.125rem'
-    }
+      lg: '1.125rem',
+    },
   },
   variants: {},
-  plugins: []
+  plugins: [],
 }

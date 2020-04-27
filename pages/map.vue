@@ -16,8 +16,8 @@ export default {
   computed: {
     ...mapState({
       navbarLinks: (state) => state.links.navbarLinks,
-      footerLinks: (state) => state.links.footerLinks
-    })
+      footerLinks: (state) => state.links.footerLinks,
+    }),
   },
   head() {
     return {
@@ -26,11 +26,11 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Développeur web JavaScript Frontend'
-        }
-      ]
+          content: 'Développeur web JavaScript Frontend',
+        },
+      ],
     }
-  }
+  },
 }
 // console.log(navbarLinks)
 </script>

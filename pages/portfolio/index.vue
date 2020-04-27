@@ -32,7 +32,7 @@ export default {
   computed: {
     portfolio() {
       return this.$store.state.portfolio.portfolio
-    }
+    },
   },
   head() {
     return {
@@ -41,11 +41,11 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Développeur web JavaScript Frontend'
-        }
-      ]
+          content: 'Développeur web JavaScript Frontend',
+        },
+      ],
     }
-  }
+  },
   /*
 
     */

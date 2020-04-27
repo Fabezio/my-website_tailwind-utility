@@ -14,7 +14,7 @@ div.relative.z-10.inset-x-0.top-1.w-screen(class="hidden lg:hidden")
 export default {
   data() {
     return {}
-  }
+  },
 }
 </script>
 

@@ -9,25 +9,25 @@ export default {
   props: {
     width: {
       type: String,
-      default: 'w-full'
+      default: 'w-full',
     },
     label: {
       type: String,
-      default: 'name'
+      default: 'name',
     },
     type: {
       type: String,
-      default: 'text'
+      default: 'text',
     },
     prependIcon: {
       type: String,
-      default: 'far fa-user'
+      default: 'far fa-user',
     },
     appendIcon: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>
 

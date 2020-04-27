@@ -15,21 +15,21 @@ export default {
   props: {
     error: {
       type: Object,
-      default: null
-    }
+      default: null,
+    },
   },
   data() {
     return {
       pageNotFound: '404 - Page non trouvée',
-      otherError: 'Oops! erreur de chargement, désolé!'
+      otherError: 'Oops! erreur de chargement, désolé!',
     }
   },
   head() {
     const title =
       this.error.statusCode === 404 ? this.pageNotFound : this.otherError
     return {
-      title
+      title,
     }
-  }
+  },
 }
 </script>
