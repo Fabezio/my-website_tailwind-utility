@@ -15,16 +15,13 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "@vue/composition-api": "^0.5.0",
-    "firebase": "^7.9.3",
     "font-awesome": "^4.7.0",
     "gyp": "^0.5.0",
     "nuxt": "^2.0.0",
-    "nuxt-material-design-icons": "^1.0.4",
     "stylus": "^0.54.7",
     "vee-validate": "^3.2.5"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.2",
     "@nuxtjs/eslint-config": "^2.0.2",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/tailwindcss": "^1.0.0",

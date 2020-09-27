@@ -48,7 +48,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    'nuxt-material-design-icons',
+    // 'nuxt-material-design-icons',
   ],
   /*
    ** Axios module configuration
