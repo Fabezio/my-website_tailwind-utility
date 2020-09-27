@@ -63,7 +63,7 @@ export const state = () => ({
           name: 'Tailwind',
           version: '1.x',
           img:
-            'https://pic.vsixhub.com/42/e2/6226e0be-5975-4616-948c-545d562adc1d-logo.png',
+            'https://www.markusantonwolf.com/media/pages/blog/tailwind-css/265298487-1596675041/tailwind-css-logo.svg',
           desc: 'librairie utilitaire css',
         },
       ],
@@ -83,7 +83,8 @@ export const state = () => ({
         {
           name: 'Vue JS',
           version: '2.6',
-          img: 'http://assets.stickpng.com/thumbs/58482acecef1014c0b5e4a1e.png',
+          img:
+            'https://banner2.cleanpng.com/20180718/cbh/kisspng-vue-js-javascript-library-angularjs-react-vue-js-5b4ebe1bc45884.1915769815318871318042.jpg',
           desc: 'Semblable à React, en plus simple et complet',
         },
         {
