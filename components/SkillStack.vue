@@ -7,8 +7,9 @@ div.mx-auto(class="lg:w-2/3")
   h2.font-light(v-for='(code,i) in codes', :key='i' ) {{code.title}}
     .main.border.rounded.m-3.flex.flex-col.flex-grow(:id='code.title' :class='card.name === !code.title.name  ? "hidden" : "block"' v-for='card in code.content', :key='card.name')
       .flex()
-        img(class='block' rounded :src='card.img', alt='', )
-        .flex-col.w-full.mx-2
+        .thumbnail
+          img(class='block' rounded :src='card.img', alt='', )
+        .flex-col.w-full.mx-3.pl-2
           h3 {{card.name}}
           p.font-light.text-left {{card.desc}}
           p.version.font-light.text-gray-500.text-left version: {{card.version}}
@@ -32,9 +33,12 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.thumbnail
+  width 100px
+  height 100px
 img
-	width 100px
-	height 100px
+	max-width 100px
+	max-height 100px
 p
 	font-size 20px
 </style>
