@@ -1,6 +1,14 @@
 <template lang="pug">
 div
-  h1.text-center.pb-5.uppercase Acquis
+  h1.text-center Compétences
+  h2.uppercase Savoir-faire
+
+  ul
+    li structure, mise en forme
+    li dynamisation
+    li mise en place base de données
+    li maintenance
+  h2.pb-5.uppercase Acquis
   SkillStack.skill-stack
 
 
@@ -52,4 +60,16 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+h2
+  max-width 75%
+  text-indent 2rem
+  margin  2rem auto 0rem
+
+ul
+  text-indent 3rem
+  max-width 75%
+  margin auto
+li
+  list-style '> ' inside
+</style>

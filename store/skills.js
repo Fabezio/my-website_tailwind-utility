@@ -94,6 +94,21 @@ export const state = () => ({
             'https://cosmic-s3.imgix.net/9af92d20-31d0-11e8-b24f-2f60c3c01c65-nuxtjs-cosmicjs.png',
           desc: 'Framework utilisant VueJS pour des applis universelles ',
         },
+        {
+          name: 'Svelte JS',
+          version: '3.0',
+          img:
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png',
+          desc:
+            "Framework js dont les fonctionnalités s'appuient sur la compilation",
+        },
+        {
+          name: 'Sapper',
+          version: '0.9',
+          img:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFnmBQysC_SpxOyGXiudJjrwUnuB5Okktc_A&usqp=CAU',
+          desc: 'Framework utilisant Svelte JS pour des applis universelles ',
+        },
       ],
     },
     {
@@ -143,12 +158,20 @@ export const state = () => ({
         },
         {
           name: 'Python',
-          version: 3.7,
+          version: 3.8,
           img:
             'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png',
           desc:
             'Langage de programmation, plébiscité en Big Data et Machine Learning',
         },
+
+        // {
+        //   name: 'Django',
+        //   version: 3.1,
+        //   img: 'https://icon-library.com/images/django-icon/django-icon-0.jpg',
+        //   desc: 'Framework de développement web utilisant Python',
+        // },
+
         {
           name: 'bash',
           version: '5.0',
@@ -156,6 +179,21 @@ export const state = () => ({
             'https://cdn3.brettterpstra.com/uploads/2015/02/terminal-longshadow.png',
           desc: 'Langage de scripts, largement utilisé sous Linux',
         },
+        // {
+        //   name: 'Java',
+        //   version: '11.0',
+        //   img:
+        //     'https://tech-computer.fr/wp-content/uploads/2017/03/004-java.png',
+        //   desc: 'Langage de programmation multiplateforme, très complet',
+        // },
+        // {
+        //   name: 'Go / Golang',
+        //   version: '5.0',
+        //   img:
+        //     'https://www.pikpng.com/pngl/m/455-4550459_golang-logo-go-logo-png-clipart.png',
+        //   desc:
+        //     'Langage de programmation rassemblant les fonctionnalités de C, Python, Java & Google',
+        // },
       ],
     },
   ],

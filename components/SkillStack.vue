@@ -34,11 +34,11 @@ export default {
 
 <style lang="stylus" scoped>
 .thumbnail
-  width 100px
-  height 100px
+  width 150px
+  height 150px
 img
-	max-width 100px
-	max-height 100px
+	max-width 150px
+	max-height 150px
 p
 	font-size 20px
 </style>

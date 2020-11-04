@@ -33,8 +33,9 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '~/plugins/_main',
-    '~/plugins/btn',
+    '~/plugins/_Main',
+    '~/plugins/stack',
+    '~/plugins/buttons',
     '~/plugins/forms',
     '~/plugins/icons',
   ],

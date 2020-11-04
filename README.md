@@ -19,4 +19,11 @@ $ yarn start
 $ yarn generate
 ```
 
+## custom dev components
+global cmp
+- **_main**
+- btn(*buttons*)
+- icons
+- forms
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

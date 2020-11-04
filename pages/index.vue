@@ -1,6 +1,7 @@
 <template lang="pug">
   div
     img.banner.w-full.h-auto(src='/img/bannière_métal_luisant.png')
+    //- img.banner.w-full.h-auto(src='/img/bannière\ metal\ fondu.png')
     .border.rounded-b-lg(class='lg:max-w-full md:w-11/12 md:mx-auto lg:flex')
       img#photoid.w-auto.rounded-b-lg(class='hidden lg:block ' :src='idpict')
       .bg-white.rounded-b.p-4.flex.flex-col.justify-around.leading-normal(class='lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r')
