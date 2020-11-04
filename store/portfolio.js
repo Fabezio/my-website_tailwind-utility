@@ -4,7 +4,7 @@ export const state = () => ({
   portfolio: [
     {
       id: '1',
-      url: 'travelagencyfabezio.netlify.app',
+      url: 'travelagency-mod.netlify.app',
       img: 'https://travelagencyfabezio.netlify.app/Images/view.png',
       banner: 'https://travelagencyfabezio.netlify.app/Images/view.png',
       mod: 'voyage',
@@ -14,7 +14,7 @@ export const state = () => ({
     },
     {
       id: '2',
-      url: 'snakeey.netlify?',
+      url: 'snakeey.netlify.app',
       img: 'https://snakeey.netlify.app/img/view.png',
       banner: 'https://snakeey.netlify.app/img/view.png',
       mod: 'snakeey',
